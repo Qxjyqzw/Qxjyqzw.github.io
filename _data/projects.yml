@@ -1,0 +1,12 @@
+
+- name: "Drones: 3D UAV Battle Game"
+  video: drones.mp4
+  info: A fully interactive 3D UAV battle game developed using Three.js and Cannon-es.js.
+  code: https://github.com/He-Ren/ACG_Project_2024Fall
+  webpage: https://qxjyqzw.github.io/Drones/
+  paper: drones.pdf
+  tags:
+    - Three.js
+    - Cannon-es.js
+    - JavaScript
+    - 3D Game Development

@@ -3,15 +3,15 @@
   info: Mengjie Zhao, Bachelor in Interdisplinary Institute of Information Science, Tsinghua University.
   email: zhaomj23@mails.tsinghua.edu.cn
   github: https://github.com/Qxjyqzw
+  x: https://x.com/qxjyqzw
   # researchgate: https://www.researchgate.net/
-  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
-  cv: cv/cv.pdf
+  # scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
+  # cv: cv/cv.pdf
   # Change the items in "education" you have (up to 6)
   education:
     [
-      "(1942) Ph.D. Physics, Princeton University",
-      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+      "2023-present, BS in Computer Science, Tsinghua University"
     ]
 
   educationshort:
-    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
+    ["2023-present, BS in CS, Tsinghua University"]
