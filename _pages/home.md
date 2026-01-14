@@ -1,5 +1,5 @@
 ---
-title: "Home"
+# title: "Home"
 layout: homelay
 sitemap: false
 permalink: /
@@ -40,14 +40,75 @@ Alongside my research, I am interested in <span class="font-weight-bold"><b>AI e
 
 Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cultural pursuits.</b></span> I play the *guqin* and *ruan* and am a member of the Tsinghua University Chinese Traditional Orchestra. I also enjoy reading, writing, calligraphy, tennis, running, and traveling. I am an <span class="font-weight-bold"><b>outgoing and socially engaged person</b></span>, and I am always happy to connect for academic discussions, collaborations, or casual conversations.
 
-<h2 class="section-subtitle text-primary accent-left">Publications</h2>
+<h2 class="section-subtitle text-primary accent-left">Research</h2>
+
+{% for research in site.data.research %}
+
+<div class="jumbotron">
+<div class="row">
+
+<div class="col-sm-4 research-media">
+{% if research.image %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ research.image }}" width="100%" style="max-width:100%; display:block;"/>
+{% endif %}
+{% if research.video %}
+  <video class="research-video" autoplay loop muted playsinline preload="auto">
+    <source src="{{ site.url }}{{ site.baseurl }}/videos/{{ research.video }}" type="video/mp4">
+  </video>
+{% endif %}
+</div>
+
+<div class="col-sm-8 col-xs-12">
+
+<div class="research-title">
+<h4>{{ research.name | markdownify | strip_paragraphs }}</h4>
+</div>
+
+
+<div class="research-links">
+{% if research.webpage %}
+<a class="research-button" href="{{ research.webpage }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Webpage</span>
+</a>
+{% endif %}
+
+{% if research.code %}
+<a class="research-button" href="{{ research.code }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Code</span>
+</a>
+{% endif %}
+
+{% if research.paper %}
+<a class="research-button" href="{{ site.url }}{{ site.baseurl }}/papers/{{ research.paper }}" target="_blank" rel="noopener">
+    <span class="research-button-label">PDF</span>
+</a>
+{% endif %}
+
+{% if research.video-link %}
+<a class="research-button" href="{{ research.video-link }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Video</span>
+</a>
+{% endif %}
+
+</div>
+
+<div class="research-info">
+<i>{{ research.info }}</i><br>
+</div>
+
+</div>
+</div>
+</div>
+{% endfor %}
+
+
 <h2 class="section-subtitle accent-left text-primary">Project Highlights</h2>
 {% for project in site.data.projects %}
 
 <div class="jumbotron">
 <div class="row">
 
-<div class="col-sm-3 project-media">
+<div class="col-sm-4 project-media">
 {% if project.image %}
   <img src="{{ site.url }}{{ site.baseurl }}/images/{{ project.image }}" width="100%" style="max-width:100%; display:block;"/>
 {% endif %}
@@ -58,10 +119,10 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 {% endif %}
 </div>
 
-<div class="col-sm-9 col-xs-12">
+<div class="col-sm-8 col-xs-12">
 
 <div class="project-title">
-<h4>{{ project.name }}</h4>
+<h4>{{ project.name | markdownify | strip_paragraphs }}</h4>
 </div>
 
 

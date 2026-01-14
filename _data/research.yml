@@ -1,0 +1,7 @@
+
+- name: "[Project Instinct](https://project-instinct.github.io/)"
+  image: project_instinct.png
+  info: A unified framework from algorithm, environment, dataset curation, and deployment for Instinct-Level intelligence on humanoid robots.
+  code: https://github.com/project-instinct
+  webpage: https://project-instinct.github.io/
+  video-link: https://www.youtube.com/watch?v=OG3b46-TLVQ

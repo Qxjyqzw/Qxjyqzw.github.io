@@ -33,8 +33,10 @@
   <h4>News</h4>
 
   {% for article in site.data.news limit:3 %}
+  <li>
   <b>{{ article.date }}</b>
-    <p>{{ article.headline }}</p>
+    <span>{{ article.headline | markdownify | jemoji }}</span>
+  </li>
   {% endfor %}
   
   <!-- <h5><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h5> -->
