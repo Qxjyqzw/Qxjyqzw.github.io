@@ -1,7 +1,15 @@
+- name: "[Hiking in the Wild: A Scalable Perceptive Parkour Framework for Humanoids](https://project-instinct.github.io/hiking-in-the-wild/)"
+  image: hiking_in_the_wild.jpg
+  info: "Shaoting Zhu*, Ziwen Zhuang*, Mengjie Zhao, Kun-Ying Lee, Hang Zhao. arXiv, 2026. We present a scalable, end-to-end perceptive parkour framework designed for robust humanoid hiking. Our policy enables robust traversal of complex terrains at speeds up to 2.5 m/s."
+  webpage: https://project-instinct.github.io/hiking-in-the-wild/
+  video-link: https://youtu.be/yBKv4N3V-5g
+  arxiv: https://arxiv.org/abs/2601.07718
+  code: https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/parkour/README.md
 
-- name: "[Project Instinct](https://project-instinct.github.io/)"
-  image: project_instinct.png
-  info: A unified framework from algorithm, environment, dataset curation, and deployment for Instinct-Level intelligence on humanoid robots.
-  code: https://github.com/project-instinct
-  webpage: https://project-instinct.github.io/
-  video-link: https://www.youtube.com/watch?v=OG3b46-TLVQ
+- name: "[Deep Whole-body Parkour](https://project-instinct.github.io/deep-whole-body-parkour/)"
+  image: deep_whole_body_parkour.jpg
+  info: "Ziwen Zhuang, Shaoting Zhu, Mengjie Zhao, Hang Zhao. arXiv, 2026. We present a framework where exteroceptive sensing is integrated into whole-body motion tracking, permitting a humanoid to perform highly dynamic, non-locomotion tasks on uneven terrain."
+  webpage: https://project-instinct.github.io/deep-whole-body-parkour/
+  video-link: https://youtu.be/3s0Al0kxUuo
+  arxiv: https://arxiv.org/abs/2601.07701
+  code: https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/shadowing/README.md

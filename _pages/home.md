@@ -72,6 +72,18 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 </a>
 {% endif %}
 
+{% if research.video-link %}
+<a class="research-button" href="{{ research.video-link }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Video</span>
+</a>
+{% endif %}
+
+{% if research.arxiv %}
+<a class="research-button" href="{{ research.arxiv }}" target="_blank" rel="noopener">
+    <span class="research-button-label">arXiv</span>
+</a>
+{% endif %}
+
 {% if research.code %}
 <a class="research-button" href="{{ research.code }}" target="_blank" rel="noopener">
     <span class="research-button-label">Code</span>
@@ -81,12 +93,6 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 {% if research.paper %}
 <a class="research-button" href="{{ site.url }}{{ site.baseurl }}/papers/{{ research.paper }}" target="_blank" rel="noopener">
     <span class="research-button-label">PDF</span>
-</a>
-{% endif %}
-
-{% if research.video-link %}
-<a class="research-button" href="{{ research.video-link }}" target="_blank" rel="noopener">
-    <span class="research-button-label">Video</span>
 </a>
 {% endif %}
 
