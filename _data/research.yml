@@ -17,20 +17,3 @@
   video-link: https://youtu.be/3s0Al0kxUuo
   arxiv: https://arxiv.org/abs/2601.07701
   code: https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/shadowing/README.md
-
-- name: "[SPAN-Nav: Generalized Spatial Awareness for Versatile Vision-Language Navigation](https://pku-epic.github.io/SPAN-Nav-Web/)"
-  image: span_nav.png
-  authors: "Jiahang Liu*, Tianyu Xu*, Jiawei Chen*, Lu Yue*, Jiazhao Zhang*, Zhiyong Wang*, Minghan Li, Qisheng Zhao, Anqi Li, Qi Su, Zhizheng Zhang&dagger;, He Wang&dagger;"
-  venue: "arXiv, 2026"
-  # info: "SPAN-Nav is an end-to-end navigation model with universal 3D spatial awareness. It utilizes a single spatial token extracted from RGB video and a Spatial Chain-of-Thought mechanism to achieve robust path planning and obstacle avoidance in complex environments."
-  webpage: https://pku-epic.github.io/SPAN-Nav-Web/
-  arxiv: https://arxiv.org/abs/2603.09163
-
-- name: "[UrbanVLA: A Vision-Language-Action Model for Urban Micromobility](https://pku-epic.github.io/UrbanVLA-Web/)"
-  image: urban_vla.png
-  authors: "Anqi Li*, Zhiyong Wang*, Jiazhao Zhang*, Minghan Li, Yunpeng Qi, Zhibo Chen, Zhizheng Zhang&dagger;, He Wang&dagger;"
-  venue: "ICRA, 2026"
-  # info: "UrbanVLA is a route-conditioned vision-language-action model for urban micromobility. It aligns high-level navigation routes with visual observations to enable scalable, long-horizon navigation."
-  webpage: https://pku-epic.github.io/UrbanVLA-Web/
-  arxiv: https://arxiv.org/abs/2510.23576
-  code: https://github.com/GalaxyGeneralRobotics/UrbanVLA

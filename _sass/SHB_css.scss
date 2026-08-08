@@ -574,13 +574,19 @@ h4 > p {
   font-weight: inherit;
 }
 
-#homeid .jumbotron .research-info p,
 #homeid .jumbotron .project-info p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-#homeid .jumbotron .research-info p:last-child,
+#homeid .jumbotron .research-info p {
+  margin: 0;
+}
+
+#homeid .jumbotron .research-info p + p {
+  margin-top: 0.15rem;
+}
+
 #homeid .jumbotron .project-info p:last-child {
   margin-bottom: 0;
 }
