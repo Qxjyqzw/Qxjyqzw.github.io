@@ -1,17 +1,11 @@
-- institution: "[MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/)"
+- name: "[MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/)"
   image: experience/mars_lab.png
-  role: Undergraduate Researcher
-  dates: 2025.3 - present
-  advisor: "[Prof. Hang Zhao](https://hangzhaomit.github.io/)"
+  info: "Undergraduate Researcher: 2025.3 - present. Research Advisor: [Prof. Hang Zhao](https://hangzhaomit.github.io/)."
 
-- institution: "[General Vision Lab, Beijing Institute for General Artificial Intelligence (BIGAI)](https://eng.bigai.ai/)"
+- name: "[General Vision Lab, Beijing Institute for General Artificial Intelligence (BIGAI)](https://eng.bigai.ai/)"
   image: experience/bigai.png
-  role: Research Intern
-  dates: 2025.11 - present
-  advisor: "[Prof. Siyuan Huang](https://siyuanhuang.com/)"
+  info: "Research Intern: 2025.11 - present. Research Advisor: [Prof. Siyuan Huang](https://siyuanhuang.com/)."
 
-- institution: "[Mechanical Systems Control (MSC) Lab, UC Berkeley](https://msc.berkeley.edu/)"
-  image: experience/berkeley_msc.svg
-  role: Research Intern
-  dates: 2026.2 - present
-  advisor: "[Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html)"
+- name: "[Mechanical Systems Control (MSC) Lab, UC Berkeley](https://msc.berkeley.edu/)"
+  image: experience/berkeley_msc.jpg
+  info: "Research Intern: 2026.2 - present. Research Advisor: [Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html)."

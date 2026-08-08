@@ -102,37 +102,27 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 {% endfor %}
 
 
-<h2 class="section-subtitle accent-left text-primary">Experience</h2>
+<h2 class="section-subtitle text-primary accent-left">Experience</h2>
 
 {% for experience in site.data.experience %}
 
-<div class="jumbotron experience-block">
-<div class="row align-items-center">
+<div class="jumbotron">
+<div class="row">
 
-<div class="col-sm-4 experience-media">
+<div class="col-sm-4 research-media">
 {% if experience.image %}
-  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ experience.image }}" alt="Institution logo" width="100%" style="max-width:100%; display:block;"/>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ experience.image }}" width="100%" style="max-width:100%; display:block;"/>
 {% endif %}
 </div>
 
 <div class="col-sm-8 col-xs-12">
 
-<div class="experience-title">
-<h4>{{ experience.institution | markdownify | strip_paragraphs }}</h4>
+<div class="research-title">
+<h4>{{ experience.name | markdownify | strip_paragraphs }}</h4>
 </div>
 
-<div class="experience-role">
-{{ experience.role }}: {{ experience.dates }}
-</div>
-
-{% if experience.topics %}
-<div class="experience-topics">
-Topics: {{ experience.topics }}
-</div>
-{% endif %}
-
-<div class="experience-advisor">
-Research Advisor: {{ experience.advisor | markdownify | strip_paragraphs }}
+<div class="research-info">
+<i>{{ experience.info | markdownify | strip_paragraphs }}</i><br>
 </div>
 
 </div>
