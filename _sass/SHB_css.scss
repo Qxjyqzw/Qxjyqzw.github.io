@@ -178,15 +178,15 @@ html {
 
 
 .project-title {
-  margin: 0 0 3px 0;
+  margin: 0 0 0.25rem 0;
 }
 
 .project-title h4,
 .project-title h4 a {
   font-family: inherit;
-  font-size: 1.05rem;
-  font-weight: 600;
-  line-height: 1.5;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
   margin: 0;
 }
 
@@ -453,7 +453,7 @@ html {
 .research-title h4 a {
   font-family: inherit;
   font-size: inherit;
-  font-weight: 600;
+  font-weight: inherit;
   line-height: inherit;
   margin: 0;
 }
@@ -567,6 +567,8 @@ h4 > p {
 #homeid .jumbotron .project-info,
 #homeid .jumbotron .research-title h4,
 #homeid .jumbotron .research-title h4 a,
+#homeid .jumbotron .project-title h4,
+#homeid .jumbotron .project-title h4 a,
 #homeid .jumbotron .research-links,
 #homeid .jumbotron .project-links,
 #homeid .jumbotron .research-info p,
