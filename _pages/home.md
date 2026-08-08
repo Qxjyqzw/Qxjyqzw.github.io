@@ -122,8 +122,7 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 </div>
 
 <div class="research-info">
-<p>{{ experience.role }}: {{ experience.dates }}</p>
-<p>Research Advisor: {{ experience.advisor | markdownify | strip_paragraphs }}</p>
+<p>{{ experience.role }}: {{ experience.dates }}<br>Research Advisor: {{ experience.advisor | markdownify | strip_paragraphs }}</p>
 </div>
 
 </div>
