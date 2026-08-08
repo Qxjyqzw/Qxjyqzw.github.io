@@ -109,9 +109,9 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 <div class="jumbotron">
 <div class="row">
 
-<div class="col-sm-4 research-media">
+<div class="col-sm-4 research-media research-media-logo">
 {% if experience.image %}
-  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ experience.image }}" width="100%" style="max-width:100%; display:block;"/>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ experience.image }}" style="display:block;"/>
 {% endif %}
 </div>
 
