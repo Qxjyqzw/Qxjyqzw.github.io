@@ -64,40 +64,6 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 <h4>{{ research.name | markdownify | strip_paragraphs }}</h4>
 </div>
 
-
-<div class="research-links">
-{% if research.webpage %}
-<a class="research-button" href="{{ research.webpage }}" target="_blank" rel="noopener">
-    <span class="research-button-label">Webpage</span>
-</a>
-{% endif %}
-
-{% if research.video-link %}
-<a class="research-button" href="{{ research.video-link }}" target="_blank" rel="noopener">
-    <span class="research-button-label">Video</span>
-</a>
-{% endif %}
-
-{% if research.arxiv %}
-<a class="research-button" href="{{ research.arxiv }}" target="_blank" rel="noopener">
-    <span class="research-button-label">arXiv</span>
-</a>
-{% endif %}
-
-{% if research.code %}
-<a class="research-button" href="{{ research.code }}" target="_blank" rel="noopener">
-    <span class="research-button-label">Code</span>
-</a>
-{% endif %}
-
-{% if research.paper %}
-<a class="research-button" href="{{ site.url }}{{ site.baseurl }}/papers/{{ research.paper }}" target="_blank" rel="noopener">
-    <span class="research-button-label">PDF</span>
-</a>
-{% endif %}
-
-</div>
-
 <div class="research-info">
 {% if research.authors %}
 <p>{{ research.authors }}</p>
@@ -110,6 +76,39 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 <p>{{ research.info }}</p>
 {% endif %}
 {% endcomment %}
+</div>
+
+<div class="research-links">
+{% if research.arxiv %}
+<a class="research-button" href="{{ research.arxiv }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Paper</span>
+</a>
+{% endif %}
+
+{% if research.code %}
+<a class="research-button" href="{{ research.code }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Code</span>
+</a>
+{% endif %}
+
+{% if research.webpage %}
+<a class="research-button" href="{{ research.webpage }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Project page</span>
+</a>
+{% endif %}
+
+{% if research.video-link %}
+<a class="research-button" href="{{ research.video-link }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Video</span>
+</a>
+{% endif %}
+
+{% if research.paper %}
+<a class="research-button" href="{{ site.url }}{{ site.baseurl }}/papers/{{ research.paper }}" target="_blank" rel="noopener">
+    <span class="research-button-label">Paper</span>
+</a>
+{% endif %}
+
 </div>
 
 </div>
