@@ -30,7 +30,7 @@ I'm currently a junior undergraduate student in [Institute for Interdisciplinary
 
 I'm now a research intern at [MSC Lab, UC Berkeley](https://msc.berkeley.edu/), advised by [Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html), where I also work closely with [Prof. Koushil Sreenath](https://hybrid-robotics.berkeley.edu/koushil/). Since 2025, I've also been fortunate to work with [Prof. Hang Zhao](https://hangzhaomit.github.io/) at [MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/) and [Prof. Siyuan Huang](https://siyuanhuang.com/) at [General Vision Lab, BIGAI](https://eng.bigai.ai/).
 
-My research interests include <span class="font-weight-bold"><b>humanoid robotics, whole-body loco-manipulation, reinforcement learning, and robotic foundation models</b></span>. My primary research goal is to build more generalizable, long-horizon and versatile robotic systems, which I think would be a multi-hierarchical system on different levels of abstraction and control.
+My research interests include <span class="font-weight-bold"><b>whole-body loco-manipulation, reinforcement learning, and robotic foundation models</b></span>. My primary research goal is to build more generalizable, long-horizon and versatile robotic systems, which I think would be a multi-hierarchical system on different levels of abstraction and control.
 
 <!-- Alongside my research, I am interested in AI entrepreneurship and innovation, as well as psychology and sociology. As for hobbies, I love playing *guqin* and *ruan*, and currently a member in *Tsinghua University Chinese Traditional Orchestra*. I also enjoy reading, writing, calligraphy, tennis, running, and traveling.
 
@@ -64,12 +64,9 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 <h4>{{ research.name | markdownify | strip_paragraphs }}</h4>
 </div>
 
-<div class="research-info">
-{% if research.authors %}
-<p>{{ research.authors }}</p>
-{% endif %}
-{% if research.venue %}
-<p>{{ research.venue }}</p>
+<div class="research-info" markdown="0">
+{% if research.authors or research.venue %}
+<p>{% if research.authors %}{{ research.authors }}{% if research.authors_note %} <span class="research-authors-note">{{ research.authors_note }}</span>{% endif %}{% endif %}{% if research.authors and research.venue %}<br>{% endif %}{% if research.venue %}{{ research.venue }}{% endif %}</p>
 {% endif %}
 {% comment %}
 {% if research.info %}
@@ -78,7 +75,7 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 {% endcomment %}
 </div>
 
-<div class="research-links">
+<div class="research-links" markdown="0">
 {% if research.arxiv %}
 <a class="research-button" href="{{ research.arxiv }}" target="_blank" rel="noopener">
     <span class="research-button-label">Paper</span>

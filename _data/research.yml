@@ -1,6 +1,7 @@
 - name: "[Hiking in the Wild: A Scalable Perceptive Parkour Framework for Humanoids](https://project-instinct.github.io/hiking-in-the-wild/)"
   image: hiking_in_the_wild.jpg
-  authors: "Shaoting Zhu*, Ziwen Zhuang*, <strong>Mengjie Zhao</strong>, Kun-Ying Lee, Hang Zhao"
+  authors: "Shaoting Zhu<sup>*</sup>, Ziwen Zhuang<sup>*</sup>, <strong>Mengjie Zhao</strong>, Kun-Ying Lee, Hang Zhao"
+  authors_note: "<sup>*</sup> Equal contribution"
   venue: "arXiv, 2026"
   # info: "We present a scalable, end-to-end perceptive parkour framework designed for robust humanoid hiking. Our policy enables robust traversal of complex terrains at speeds up to 2.5 m/s."
   webpage: https://project-instinct.github.io/hiking-in-the-wild/

@@ -446,15 +446,15 @@ html {
 
 
 .research-title {
-  margin: 0 0 3px 0;
+  margin: 0 0 0.25rem 0;
 }
 
 .research-title h4,
 .research-title h4 a {
   font-family: inherit;
-  font-size: 1.05rem;
+  font-size: inherit;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: inherit;
   margin: 0;
 }
 
@@ -464,21 +464,31 @@ h4 > p {
 }
 
 .research-info {
-  margin-bottom: 4px;
+  margin-bottom: 0;
   color: inherit;
   font-style: normal;
+}
+
+.research-info p {
+  margin: 0;
+}
+
+.research-authors-note {
+  font-size: 0.85em;
+  white-space: nowrap;
 }
 
 .research-links {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: 0.35rem;
 }
 
 .research-links p {
-  margin-bottom: 0.5rem; /* 去掉段落的默认外边距 */
-  padding: 0; /* 去掉段落的默认内边距 */
-  line-height: 1; /* 设置行高为 1，减少空白 */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .research-link {
@@ -555,6 +565,8 @@ h4 > p {
 
 #homeid .jumbotron .research-info,
 #homeid .jumbotron .project-info,
+#homeid .jumbotron .research-title h4,
+#homeid .jumbotron .research-title h4 a,
 #homeid .jumbotron .research-links,
 #homeid .jumbotron .project-links,
 #homeid .jumbotron .research-info p,
@@ -583,8 +595,8 @@ h4 > p {
   margin: 0;
 }
 
-#homeid .jumbotron .research-info p + p {
-  margin-top: 0.15rem;
+#homeid .jumbotron .research-links {
+  margin-top: 0.35rem;
 }
 
 #homeid .jumbotron .project-info p:last-child {
