@@ -28,7 +28,7 @@ Feynman R., The theory of positrons. <i>Phys. Rev.</i> (1949)
 
 I'm currently a junior undergraduate student in [Institute for Interdisciplinary Information Sciences (IIIS, Yao Class)](https://iiis.tsinghua.edu.cn/en/), majoring in Computer Science and Technology.
 
-I am very fortunate to be advised by [Prof. Hang Zhao](https://hangzhaomit.github.io/) in [MARS Lab](https://group.iiis.tsinghua.edu.cn/~marslab/#/). Also, I am currently a research intern at [Beijing Institute for General Artificial Intelligence (BIGAI)](https://eng.bigai.ai/), under the supervision of [Prof. Siyuan Huang](https://siyuanhuang.com/).
+I'm now a research intern at [MSC Lab, UC Berkeley](https://msc.berkeley.edu/), under the supervision of [Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html), where I also work closely with [Prof. Koushil Sreenath](https://hybrid-robotics.berkeley.edu/koushil/). In parallel, I continue to collaborate with [Prof. Hang Zhao](https://hangzhaomit.github.io/) at [MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/) and [Prof. Siyuan Huang](https://siyuanhuang.com/) at [General Vision Lab, BIGAI](https://eng.bigai.ai/).
 
 My research interests include <span class="font-weight-bold"><b>humanoid robotics, whole-body loco-manipulation, reinforcement learning, and robotic foundation models</b></span>. My primary research goal is to build more generalizable, long-horizon and versatile robotic systems, which I think would be a multi-hierarchical system on different levels of abstraction and control.
 
