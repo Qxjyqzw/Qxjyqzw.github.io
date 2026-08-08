@@ -194,12 +194,13 @@ html {
   margin-bottom: 4px;
   color: inherit;
   font-family: inherit;
-  font-size: 1rem;
   font-style: normal;
-  line-height: 1.5;
+  line-height: inherit;
 }
 
-.project-info p {
+.project-info p,
+.project-info a {
+  font-size: inherit;
   margin: 0 0 0.25rem 0;
 }
 
@@ -255,6 +256,7 @@ html {
   transition: background .12s ease, transform .08s ease;
   font-weight: 500;
   white-space: nowrap;
+  font-size: inherit;
 }
 
 .project-button:hover,
@@ -266,7 +268,7 @@ html {
 }
 
 .project-button-label {
-  font-size: 0.9rem;
+  font-size: inherit;
 }
 @media (max-width: 767.98px) {
   .project-links {
@@ -443,12 +445,13 @@ h4 > p {
   margin-bottom: 4px;
   color: inherit;
   font-family: inherit;
-  font-size: 1rem;
   font-style: normal;
-  line-height: 1.5;
+  line-height: inherit;
 }
 
-.research-info p {
+.research-info p,
+.research-info a {
+  font-size: inherit;
   margin: 0 0 0.25rem 0;
 }
 
@@ -506,6 +509,7 @@ h4 > p {
   font-weight: 500;
   white-space: nowrap;
   margin: 0;
+  font-size: inherit;
 }
 
 .research-button:hover,
@@ -517,7 +521,7 @@ h4 > p {
 }
 
 .research-button-label {
-  font-size: 0.9rem;
+  font-size: inherit;
 }
 @media (max-width: 767.98px) {
   .research-links {
@@ -529,5 +533,19 @@ h4 > p {
     justify-content: flex-start;
     padding-left: 12px;
   }
+}
+
+/* Keep section card body text no larger than homepage intro paragraphs. */
+#homeid .jumbotron {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#homeid .jumbotron .research-info,
+#homeid .jumbotron .project-info,
+#homeid .jumbotron .research-links,
+#homeid .jumbotron .project-links {
+  font-size: inherit;
+  line-height: inherit;
 }
 
