@@ -99,7 +99,17 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 </div>
 
 <div class="research-info">
+{% if research.authors %}
+<p>{{ research.authors | markdownify | strip_paragraphs }}</p>
+{% endif %}
+{% if research.venue %}
+<p>{{ research.venue }}</p>
+{% endif %}
+{% comment %}
+{% if research.info %}
 <p>{{ research.info }}</p>
+{% endif %}
+{% endcomment %}
 </div>
 
 </div>
