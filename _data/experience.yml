@@ -1,11 +1,11 @@
-- name: "[MARS Lab](https://group.iiis.tsinghua.edu.cn/~marslab/)"
-  image: experience/mars_lab.png
-  info: "Undergraduate Researcher: 2025.3 - present. Research Advisor: [Prof. Hang Zhao](https://hangzhaomit.github.io/)."
+- name: "[MSC Lab, UC Berkeley](https://msc.berkeley.edu/)"
+  image: experience/berkeley_msc.jpg
+  info: "Research Intern: 2026.2 - present. Research Advisor: [Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html)."
 
 - name: "[General Vision Lab, BIGAI](https://eng.bigai.ai/)"
   image: experience/bigai.png
   info: "Research Intern: 2025.11 - present. Research Advisor: [Prof. Siyuan Huang](https://siyuanhuang.com/)."
 
-- name: "[MSC Lab](https://msc.berkeley.edu/)"
-  image: experience/berkeley_msc.jpg
-  info: "Research Intern: 2026.2 - present. Research Advisor: [Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html)."
+- name: "[MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/)"
+  image: experience/mars_lab.png
+  info: "Undergraduate Researcher: 2025.3 - present. Research Advisor: [Prof. Hang Zhao](https://hangzhaomit.github.io/)."
