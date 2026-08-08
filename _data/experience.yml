@@ -12,6 +12,7 @@
 
 - name: "[MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/)"
   image: experience/mars_lab.png
+  logo_size: sm
   role: Undergraduate Researcher
   dates: 2025.3 - present
   advisor: "[Prof. Hang Zhao](https://hangzhaomit.github.io/)"

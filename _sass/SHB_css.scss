@@ -394,10 +394,20 @@ html {
   margin: 0 auto;
 }
 
+.research-media-logo-sm img {
+  max-width: 72px;
+  max-height: 68px;
+}
+
 @media (max-width: 767.98px) {
   .research-media-logo img {
     max-width: 96px;
     max-height: 84px;
+  }
+
+  .research-media-logo-sm img {
+    max-width: 64px;
+    max-height: 60px;
   }
 }
 
