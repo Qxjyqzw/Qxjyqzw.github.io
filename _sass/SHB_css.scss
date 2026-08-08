@@ -181,9 +181,26 @@ html {
   margin: 0 0 3px 0;
 }
 
+.project-title h4,
+.project-title h4 a {
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
 .project-info {
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.85);
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.project-info p {
+  margin: 0 0 0.25rem 0;
 }
 
 .project-links {
@@ -408,6 +425,15 @@ html {
   margin: 0 0 3px 0;
 }
 
+.research-title h4,
+.research-title h4 a {
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
 h4 > p {
   display: inline; /* 将段落内容显示为行内元素 */
   margin: 0;       /* 去掉段落的默认外边距 */
@@ -415,7 +441,15 @@ h4 > p {
 
 .research-info {
   margin-bottom: 4px;
-  color: rgba(0,0,0,0.85);
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.research-info p {
+  margin: 0 0 0.25rem 0;
 }
 
 .research-links {

@@ -36,7 +36,7 @@ My research interests include <span class="font-weight-bold"><b>humanoid robotic
 
 I am an outgoing and socially engaged person who enjoys meeting new people, exchanging ideas, and getting new experiences outside of my comfort zone. I am always open to communication and happy to connect, whether for academic discussions, collaborations, or casual conversations. -->
 
-Alongside my research, I am interested in <span class="font-weight-bold"><b>AI entrepreneurship and innovation, as well as psychology and sociology.</b></span>
+<!-- Alongside my research, I am interested in <span class="font-weight-bold"><b>AI entrepreneurship and innovation, as well as psychology and sociology.</b></span> -->
 
 Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cultural pursuits.</b></span> I play the *guqin* and *ruan* and am a member of the Tsinghua University Chinese Traditional Orchestra. I also enjoy reading, writing, calligraphy, running, and traveling. I am an <span class="font-weight-bold"><b>outgoing and socially engaged person</b></span>, and I am always happy to connect for academic discussions, collaborations, or casual conversations.
 
@@ -93,7 +93,7 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 </div>
 
 <div class="research-info">
-<i>{{ research.info }}</i><br>
+<p>{{ research.info }}</p>
 </div>
 
 </div>
@@ -122,7 +122,8 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 </div>
 
 <div class="research-info">
-<i>{{ experience.info | markdownify | strip_paragraphs }}</i><br>
+<p>{{ experience.role }}: {{ experience.dates }}</p>
+<p>Research Advisor: {{ experience.advisor | markdownify | strip_paragraphs }}</p>
 </div>
 
 </div>
@@ -176,7 +177,7 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 </div>
 
 <div class="project-info">
-<i>{{ project.info }}</i><br>
+<p>{{ project.info }}</p>
 </div>
 
 </div>
