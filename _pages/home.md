@@ -38,7 +38,7 @@ I am an outgoing and socially engaged person who enjoys meeting new people, exch
 
 Alongside my research, I am interested in <span class="font-weight-bold"><b>AI entrepreneurship and innovation, as well as psychology and sociology.</b></span>
 
-Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cultural pursuits.</b></span> I play the *guqin* and *ruan* and am a member of the Tsinghua University Chinese Traditional Orchestra. I also enjoy reading, writing, calligraphy, tennis, running, and traveling. I am an <span class="font-weight-bold"><b>outgoing and socially engaged person</b></span>, and I am always happy to connect for academic discussions, collaborations, or casual conversations.
+Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cultural pursuits.</b></span> I play the *guqin* and *ruan* and am a member of the Tsinghua University Chinese Traditional Orchestra. I also enjoy reading, writing, calligraphy, running, and traveling. I am an <span class="font-weight-bold"><b>outgoing and socially engaged person</b></span>, and I am always happy to connect for academic discussions, collaborations, or casual conversations.
 
 <h2 class="section-subtitle text-primary accent-left">Research</h2>
 
@@ -94,6 +94,45 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 
 <div class="research-info">
 <i>{{ research.info }}</i><br>
+</div>
+
+</div>
+</div>
+</div>
+{% endfor %}
+
+
+<h2 class="section-subtitle accent-left text-primary">Experience</h2>
+
+{% for experience in site.data.experience %}
+
+<div class="jumbotron experience-block">
+<div class="row align-items-center">
+
+<div class="col-sm-4 experience-media">
+{% if experience.image %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ experience.image }}" alt="Institution logo" width="100%" style="max-width:100%; display:block;"/>
+{% endif %}
+</div>
+
+<div class="col-sm-8 col-xs-12">
+
+<div class="experience-title">
+<h4>{{ experience.institution | markdownify | strip_paragraphs }}</h4>
+</div>
+
+<div class="experience-role">
+{{ experience.role }}: {{ experience.dates }}
+</div>
+
+{% if experience.topics %}
+<div class="experience-topics">
+Topics: {{ experience.topics }}
+</div>
+{% endif %}
+
+<div class="experience-advisor">
+Research Advisor: {{ experience.advisor | markdownify | strip_paragraphs }}
 </div>
 
 </div>

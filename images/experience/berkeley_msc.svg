@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="UC Berkeley MSC Lab">
+  <circle cx="100" cy="100" r="92" fill="#003262"/>
+  <text x="100" y="88" text-anchor="middle" fill="#FDB515" font-family="Georgia, serif" font-size="42" font-weight="700">MSC</text>
+  <text x="100" y="118" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" font-weight="600">UC BERKELEY</text>
+</svg>
