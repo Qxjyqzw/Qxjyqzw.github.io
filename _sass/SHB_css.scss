@@ -193,15 +193,7 @@ html {
 .project-info {
   margin-bottom: 4px;
   color: inherit;
-  font-family: inherit;
   font-style: normal;
-  line-height: inherit;
-}
-
-.project-info p,
-.project-info a {
-  font-size: inherit;
-  margin: 0 0 0.25rem 0;
 }
 
 .project-links {
@@ -254,9 +246,7 @@ html {
   background: rgba(0,0,0,0.05);
   border: 1px solid rgba(0,0,0,0.08);
   transition: background .12s ease, transform .08s ease;
-  font-weight: 500;
   white-space: nowrap;
-  font-size: inherit;
 }
 
 .project-button:hover,
@@ -444,15 +434,7 @@ h4 > p {
 .research-info {
   margin-bottom: 4px;
   color: inherit;
-  font-family: inherit;
   font-style: normal;
-  line-height: inherit;
-}
-
-.research-info p,
-.research-info a {
-  font-size: inherit;
-  margin: 0 0 0.25rem 0;
 }
 
 .research-links {
@@ -506,10 +488,8 @@ h4 > p {
   background: rgba(0,0,0,0.05);
   border: 1px solid rgba(0,0,0,0.08);
   transition: background .12s ease, transform .08s ease;
-  font-weight: 500;
   white-space: nowrap;
   margin: 0;
-  font-size: inherit;
 }
 
 .research-button:hover,
@@ -535,17 +515,41 @@ h4 > p {
   }
 }
 
-/* Keep section card body text no larger than homepage intro paragraphs. */
+/* Match section card body typography to homepage intro paragraphs. */
 #homeid .jumbotron {
-  font-size: inherit;
-  line-height: inherit;
+  font: inherit;
+  letter-spacing: inherit;
 }
 
 #homeid .jumbotron .research-info,
 #homeid .jumbotron .project-info,
 #homeid .jumbotron .research-links,
-#homeid .jumbotron .project-links {
+#homeid .jumbotron .project-links,
+#homeid .jumbotron .research-info p,
+#homeid .jumbotron .project-info p,
+#homeid .jumbotron .research-info a,
+#homeid .jumbotron .project-info a,
+#homeid .jumbotron .research-links p,
+#homeid .jumbotron .project-links p,
+#homeid .jumbotron .research-button,
+#homeid .jumbotron .project-button,
+#homeid .jumbotron .research-button-label,
+#homeid .jumbotron .project-button-label {
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+}
+
+#homeid .jumbotron .research-info p,
+#homeid .jumbotron .project-info p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#homeid .jumbotron .research-info p:last-child,
+#homeid .jumbotron .project-info p:last-child {
+  margin-bottom: 0;
 }
 
