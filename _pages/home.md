@@ -26,21 +26,24 @@ Feynman R., The theory of positrons. <i>Phys. Rev.</i> (1949)
 
 #### Hello World!
 
-I'm currently a junior undergraduate student in [Institute for Interdisciplinary Information Sciences (IIIS, Yao Class)](https://iiis.tsinghua.edu.cn/en/), majoring in Computer Science and Technology.
+I am a junior undergraduate student at [Institute for Interdisciplinary Information Sciences (IIIS, Yao Class)](https://iiis.tsinghua.edu.cn/en/), Tsinghua University, majoring in Computer Science and Technology.
 
-I'm now a research intern at [MSC Lab, UC Berkeley](https://msc.berkeley.edu/), advised by [Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html), where I also work closely with [Prof. Koushil Sreenath](https://hybrid-robotics.berkeley.edu/koushil/). Since 2025, I've also been fortunate to work with [Prof. Hang Zhao](https://hangzhaomit.github.io/) at [MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/) and [Prof. Siyuan Huang](https://siyuanhuang.com/) at [General Vision Lab, BIGAI](https://eng.bigai.ai/).
+Currently, I am a research intern at [MSC Lab, UC Berkeley](https://msc.berkeley.edu/), advised by [Prof. Masayoshi Tomizuka](https://me.berkeley.edu/people/masayoshi-tomizuka/), where I also work closely with [Prof. Koushil Sreenath](https://hybrid-robotics.berkeley.edu/koushil/). Since 2025, I have also been fortunate to work with [Prof. Hang Zhao](https://hangzhao.me/) at [MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/) and [Prof. Siyuan Huang](https://siyuanhuang.com/) at [General Vision Lab, BIGAI](https://eng.bigai.ai/).
 
-My research interests include <span class="font-weight-bold"><b>whole-body loco-manipulation, reinforcement learning, and robotic foundation models</b></span>. My primary research goal is to build more generalizable, long-horizon and versatile robotic systems, which I think would be a multi-hierarchical system on different levels of abstraction and control.
+I am always excited to connect for academic discussions, potential collaborations, or casual chats.
 
-<!-- Alongside my research, I am interested in AI entrepreneurship and innovation, as well as psychology and sociology. As for hobbies, I love playing *guqin* and *ruan*, and currently a member in *Tsinghua University Chinese Traditional Orchestra*. I also enjoy reading, writing, calligraphy, tennis, running, and traveling.
+🎯 **Note:** I am actively seeking PhD opportunities for **Fall 2027** and look forward to connecting via email!
 
-I am an outgoing and socially engaged person who enjoys meeting new people, exchanging ideas, and getting new experiences outside of my comfort zone. I am always open to communication and happy to connect, whether for academic discussions, collaborations, or casual conversations. -->
+<h2 class="section-subtitle text-primary accent-left">Research Statement</h2>
 
-<!-- Alongside my research, I am interested in <span class="font-weight-bold"><b>AI entrepreneurship and innovation, as well as psychology and sociology.</b></span> -->
+My research spans **Whole-Body Loco-Manipulation**, **Reinforcement Learning**, and **Robotic Foundation Models**. Recently, I have been focusing on enriching loco-manipulation systems with closed-loop physical feedback—ranging from spatial perception to force-based interaction dynamics.
 
-Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cultural pursuits.</b></span> I play the *guqin* and *ruan* and am a member of the Tsinghua University Chinese Traditional Orchestra. I also enjoy reading, writing, calligraphy, running, and traveling. I am an <span class="font-weight-bold"><b>outgoing and socially engaged person</b></span>, and I am always happy to connect for academic discussions, collaborations, or casual conversations.
+In the long run, I aspire to build generalizable, physics-aware, and intelligent robotic systems, guided by two complementary axes:
 
-<h2 class="section-subtitle text-primary accent-left">Research</h2>
+* **Learning & Compositional Generalization (Horizontal):** How can robots distill reusable abstractions and functional capabilities from experience, and flexibly compose them to generalize to novel tasks and environments?
+* **Embodied Systems & Cross-Level Interfaces (Vertical):** Co-designing representations and communication interfaces that unify intent and reasoning, spatial perception, and whole-body execution under real-world physical constraints, multi-rate control frequencies, and hardware limitations.
+
+<h2 class="section-subtitle text-primary accent-left">Publications</h2>
 
 {% for research in site.data.research %}
 
@@ -195,3 +198,10 @@ Outside of work, I enjoy <span class="font-weight-bold"><b>music, sports, and cu
 </div>
 </div>
 {% endfor %}
+
+<h2 class="section-subtitle text-primary accent-left">Miscellaneous</h2>
+
+Outside of research, I enjoy music, arts, and sports:
+
+* I play the *guqin* and *ruan* (traditional Chinese stringed instruments) and am a member of the Tsinghua University Chinese Traditional Orchestra.
+* I practice Chinese calligraphy and enjoy reading, writing, running, and traveling.
