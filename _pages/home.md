@@ -30,9 +30,7 @@ I am a junior undergraduate student at [Institute for Interdisciplinary Informat
 
 Currently, I am a research intern at [MSC Lab, UC Berkeley](https://msc.berkeley.edu/), advised by [Prof. Masayoshi Tomizuka](https://me.berkeley.edu/people/masayoshi-tomizuka/), where I also work closely with [Prof. Koushil Sreenath](https://hybrid-robotics.berkeley.edu/koushil/). Since 2025, I have also been fortunate to work with [Prof. Hang Zhao](https://hangzhao.me/) at [MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/) and [Prof. Siyuan Huang](https://siyuanhuang.com/) at [General Vision Lab, BIGAI](https://eng.bigai.ai/).
 
-I am always excited to connect for academic discussions, potential collaborations, or casual chats.
-
-🎯 **Note:** I am actively seeking PhD opportunities for **Fall 2027** and look forward to connecting via email!
+I am always excited to connect for academic discussions, potential collaborations, or casual chats. 🎯 **Note:** I am actively seeking PhD opportunities for **Fall 2027** and look forward to connecting via email!
 
 <h2 class="section-subtitle text-primary accent-left">Research Statement</h2>
 
@@ -40,7 +38,7 @@ My research spans **Whole-Body Loco-Manipulation**, **Reinforcement Learning**, 
 
 In the long run, I aspire to build generalizable, physics-aware, and intelligent robotic systems, guided by two complementary axes:
 
-* **Learning & Compositional Generalization (Horizontal):** How can robots distill reusable abstractions and functional capabilities from experience, and flexibly compose them to generalize to novel tasks and environments?
+* **Learning & Compositional Generalization (Horizontal):** How can robots distill reusable abstractions and functional capabilities from multimodal data and experience, and flexibly compose them to generalize to novel tasks and environments?
 * **Embodied Systems & Cross-Level Interfaces (Vertical):** Co-designing representations and communication interfaces that unify intent and reasoning, spatial perception, and whole-body execution under real-world physical constraints, multi-rate control frequencies, and hardware limitations.
 
 <h2 class="section-subtitle text-primary accent-left">Publications</h2>
