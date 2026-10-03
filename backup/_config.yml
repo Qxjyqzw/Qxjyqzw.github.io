@@ -20,7 +20,8 @@ location: >
   Beijing, China
 
 contact: >
-  <a href="mailto:zhaomj23@mails.tsinghua.edu.cn" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Mengjie via email</a>
+  <a href="mailto:zhaomj23@mails.tsinghua.edu.cn" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Mengjie via email</a> <br/>
+  <a href="https://github.com/Qxjyqzw/Qxjyqzw.github.io.git"><i class="fa-brands fa-github fa-1x"></i> Use this site as a template!</a>
 
 # Pages shown in navbar
 # nav_pages:
@@ -84,7 +85,6 @@ scholar:
     reversed: "reversed"
 
 exclude:
-  - backup
   - Gemfile
   - Gemfile.lock
   - update_boostrap.sh
