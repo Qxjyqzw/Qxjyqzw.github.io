@@ -30,6 +30,15 @@ I am a junior undergraduate student at [Institute for Interdisciplinary Informat
 
 I am always excited to connect for academic discussions, potential collaborations, or casual chats. 🎯 **Note:** I am actively seeking PhD opportunities for **Fall 2027** and look forward to connecting via email!
 
+<h2 class="section-subtitle text-primary accent-left">Research Statement</h2>
+
+My research spans **Whole-Body Loco-Manipulation**, **Reinforcement Learning**, and **Robotic Foundation Models**. Recently, I have been focusing on enriching loco-manipulation systems with closed-loop physical feedback—ranging from spatial perception to force-based interaction dynamics.
+
+In the long run, I aspire to build generalizable, physics-aware, and intelligent robotic systems, guided by two complementary axes:
+
+* **Learning & Compositional Generalization (Horizontal):** How can robots distill reusable abstractions and functional capabilities from multimodal data and experience, and flexibly compose them to generalize to novel tasks and environments?
+* **Embodied Systems & Cross-Level Interfaces (Vertical):** Co-designing representations and communication interfaces that unify intent and reasoning, spatial perception, and whole-body execution under real-world physical constraints, multi-rate control frequencies, and hardware limitations.
+
 <h2 class="section-subtitle accent-left text-primary">Project Highlights</h2>
 {% for project in site.data.projects %}
 
