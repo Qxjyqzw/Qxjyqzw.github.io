@@ -30,11 +30,15 @@ Currently, I am a visiting student researcher at [MSC Lab, UC Berkeley](https://
 
 I am always excited to connect for academic discussions, potential collaborations, or casual chats. I am actively seeking PhD opportunities for **Fall 2027** and look forward to connecting via email.
 
-<h2 class="section-subtitle text-primary accent-left">Research Statement</h2>
+<h2 class="section-subtitle text-primary accent-left">Research Interests</h2>
 
-I work on humanoid whole-body loco-manipulation, using reinforcement learning and robot foundation models. The question I keep returning to is **the interface between a high-level policy and the whole-body controller: what should cross it, and how much should each side decide on its own.**
+My research aims to build robotic systems that are reactive at the level of control and general at the level of task reasoning. I currently work on humanoid loco-manipulation and dexterous manipulation, where the research problem I find most compelling is how a learned controller and a high-level policy should be coupled. I think about it along two axes.
 
-Ctrl-F puts an explicit force command on that interface, so one frozen controller covers pushing, dragging, lifting and kicking. SONAR gives a frozen behavior foundation model depth and an object mask, and lets a small residual work out the motion. Next, I want to find out which quantities a controller can learn from physics alone, which must be handed to it as task intent, and how to train it for the part it owns.
+**The interface between levels.** How to build a hierarchy across modules that run at different control frequencies and levels of abstraction, from RL-trained controllers to VLAs or agentic systems, and what interface should sit between them.
+
+**Generalization through hierarchy.** How such a system generalizes, and especially whether the hierarchy itself can be an advantage for generalization rather than a compromise forced by control rate.
+
+Recently I have been drawn to the idea that the high level should give only a coarse representation of the task, while the controller owns more of the instinct-level intelligence and carries its own information about the object it acts on.
 
 {% if site.data.news and site.data.news.size > 0 %}
 <h2 class="section-subtitle text-primary accent-left">News</h2>
