@@ -1,0 +1,202 @@
+/* ------------------------------------------------------------------
+   Restyle (2026-11): warm paper, serif headings, no boxes, one accent.
+   Toggle by commenting the @import "restyle" line in assets/main.scss.
+   ------------------------------------------------------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&text=%E6%B5%81%E4%BA%91%E5%B1%B1%E5%BA%84&display=swap");
+
+$paper: #fafaf8;
+$ink: #1c1b19;
+$ink-2: #4a4845;
+$ink-3: #807c76;
+$hair: #e4e4e0;
+$accent: #2f5d8a;
+$accent-dark: #1f3f60;
+$serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, "Noto Serif SC", "Songti SC", "Source Han Serif SC", serif;
+$sans: "Source Sans 3", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+html { font-size: 100% !important; }
+@media (min-width: 900px) { html { font-size: 120% !important; } }
+
+body {
+  background: $paper;
+  color: $ink;
+  font-family: $sans;
+  font-size: 1.04rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: $ink; text-decoration: none; border-bottom: 1px solid rgba($ink, 0.25); transition: color .15s, border-color .15s; }
+a:hover { color: $accent; text-decoration: none; border-bottom-color: $accent; }
+a.research-button, a.project-button, .navbar a, #newsid a, a.navbar-brand { border-bottom: none; }
+
+strong, b { font-weight: 600; color: $ink; }
+
+h1, h2, h3, h4, h5 { font-family: $serif; color: $ink; font-weight: 500; letter-spacing: -0.005em; }
+
+.container-fluid { max-width: 1280px; padding-top: 2rem; }
+@media (min-width: 768px) {
+  #homeid { flex: 0 0 73%; max-width: 73%; }
+  #newsid { flex: 0 0 27%; max-width: 27%; }
+}
+
+/* ---- navbar: white, one hairline, serif wordmark ---- */
+.navbar.bg-dark, .navbar.navbar-dark {
+  background: $paper !important;
+  border-bottom: 1px solid $hair !important;
+  box-shadow: none;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.4rem;
+}
+.navbar-brand { font-family: $serif; font-size: 1.45rem; font-weight: 500; color: $ink !important; }
+.navbar-brand img { display: none !important; }
+.navbar-dark .navbar-nav { display: none; }
+.navbar-dark .navbar-nav .nav-link { color: $ink-3 !important; font-size: 0.95rem; letter-spacing: 0.02em; }
+.navbar-dark .navbar-nav .nav-link:hover { color: $accent !important; }
+.navbar-dark .navbar-toggler { border-color: $hair; }
+.navbar-dark .navbar-toggler-icon { filter: invert(0.7); }
+
+/* ---- section headings: serif, sentence case, full-width hairline ---- */
+.section-subtitle,
+.section-subtitle.accent-left,
+.section-subtitle.text-primary {
+  font-family: $serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: -0.005em;
+  color: $ink !important;
+  border-left: none;
+  padding-left: 0;
+  padding-bottom: 0.35rem;
+  margin: 3.2rem 0 1.2rem 0;
+  border-bottom: 1px solid $hair;
+}
+.section-subtitle::after { display: none; }
+
+/* ---- intro ---- */
+#homeid > h4:first-of-type, #homeid h4#hello { display: none; }
+#homeid > p { max-width: none; margin-bottom: 1rem; }
+#homeid > p a { font-weight: 600; border-bottom-color: rgba($ink, 0.35); }
+#homeid ul { padding-left: 1.2rem; }
+#homeid ul li { margin-bottom: 0.45rem; }
+
+/* ---- cards -> list rows ---- */
+#homeid .jumbotron, #newsid .jumbotron {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+#homeid .jumbotron {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid $hair;
+}
+#homeid .jumbotron:last-of-type { border-bottom: none; }
+#homeid .jumbotron .row { align-items: flex-start; }
+
+.research-media:not(.research-media-logo) img,
+.research-media:not(.research-media-logo) video,
+.project-media img, .project-media video {
+  border-radius: 4px;
+  object-fit: cover;
+  background: #ece9e2;
+}
+.research-media, .project-media { padding-top: 0.2rem; }
+
+#homeid .jumbotron .research-title h4,
+#homeid .jumbotron .project-title h4 {
+  font-family: $serif !important;
+  font-size: 1.22rem !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  margin: 0 0 0.35rem 0;
+}
+#homeid .jumbotron .research-title h4 a,
+#homeid .jumbotron .project-title h4 a { color: $ink; border-bottom: none; }
+#homeid .jumbotron .research-title h4 a:hover,
+#homeid .jumbotron .project-title h4 a:hover { color: $accent; }
+
+#homeid .jumbotron .research-info,
+#homeid .jumbotron .research-info p,
+#homeid .jumbotron .project-info p {
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  color: $ink-2;
+}
+#homeid .jumbotron .research-info strong { color: $ink; }
+#homeid .jumbotron .research-desc { font-size: 0.97rem; line-height: 1.55; color: $ink-2; margin: 0.55rem 0 0 0; }
+.research-authors-note { color: $ink-3; font-size: 0.82rem; margin-left: 0.3rem; }
+#homeid .jumbotron .research-info sup { font-size: 0.65em; color: $ink-3; }
+
+/* buttons -> small tracked text links separated by dots */
+.research-links, .project-links { display: flex; flex-wrap: wrap; gap: 0 1.1rem; margin-top: 0.5rem !important; }
+.research-button, .project-button {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $accent !important;
+  transform: none !important;
+  position: relative;
+}
+.research-button:hover, .project-button:hover { color: $accent-dark !important; text-decoration: underline; text-underline-offset: 3px; }
+
+/* experience rows: logos small and quiet */
+.research-media-logo img, .research-media-logo p img { max-width: 92px; max-height: 64px; }
+.research-media-logo-sm img, .research-media-logo-sm p img { max-width: 48px; max-height: 44px; }
+
+/* ---- sidebar: no box ---- */
+#newsid { padding-top: 1.2rem; }
+#newsid .jumbotron center img {
+  width: 66% !important;
+  border-radius: 6px;
+  margin-bottom: 0.8rem !important;
+}
+#newsid .jumbotron h4 { font-size: 1.3rem; margin-bottom: 0.3rem; }
+#newsid .jumbotron a { color: $ink-3; margin: 0 0.15rem; }
+#newsid .jumbotron a:hover { color: $accent; }
+#newsid .jumbotron a i { font-size: 1.35rem; }
+#newsid .jumbotron ul { list-style: none; padding: 0; margin: 0.5rem 0 0.3rem 0; text-align: center; color: $ink-2; font-size: 0.92rem; }
+#newsid .jumbotron p { color: $ink-3; font-size: 0.86rem; }
+
+/* ---- footer ---- */
+#footer { margin-top: 2.5rem; }
+#footer .panel-footer { background: transparent; border: none; border-top: 1px solid $hair; padding: 1.2rem 0 1.6rem 0; }
+#footer p { color: $ink-3; font-size: 0.85rem; margin: 0; }
+#footer a { color: $ink-3; border-bottom: none; }
+#footer a:hover { color: $accent; }
+
+@media (max-width: 767.98px) {
+  .section-subtitle { font-size: 1.35rem; }
+  #newsid .jumbotron center img { width: 48% !important; }
+  .research-links, .project-links { flex-direction: row; }
+  .research-button, .project-button { width: auto; padding-left: 0 !important; }
+}
+
+/* Beyond Research: project rows sit under the first bullet */
+.beyond-projects { margin: 0.2rem 0 1rem 1.2rem; }
+.beyond-projects .jumbotron:first-of-type { border-top: 1px solid $hair; }
+
+/* coauthor links: quiet, same colour as the author line */
+#homeid .jumbotron .research-info a { color: inherit; border-bottom: 1px solid rgba($ink, 0.18); }
+#homeid .jumbotron .research-info a:hover { color: $accent; border-bottom-color: $accent; }
+
+/* sticky sidebar: clear the navbar */
+.sticky-sidebar { top: 4.6rem; max-height: calc(100vh - 4.6rem); }
+
+/* news in the main column */
+#homeid .news-list { list-style: none; padding: 0; margin: 0 0 0.5rem 0; }
+#homeid .news-list li { display: flex; gap: 1rem; font-size: 0.97rem; line-height: 1.55; color: $ink-2; margin-bottom: 0.45rem; }
+#homeid .news-list .news-date { flex: 0 0 5.2rem; color: $ink-3; font-variant-numeric: tabular-nums; }
+#homeid .news-list .news-text { flex: 1; }
+#homeid .news-list a { color: $ink; font-weight: 500; border-bottom: 1px solid rgba($ink, 0.25); }
+#homeid .news-list a:hover { color: $accent; border-bottom-color: $accent; }
