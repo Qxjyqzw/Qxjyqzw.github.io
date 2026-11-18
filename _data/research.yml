@@ -1,20 +1,53 @@
-- name: "[Hiking in the Wild: A Scalable Perceptive Parkour Framework for Humanoids](https://project-instinct.github.io/hiking-in-the-wild/)"
-  image: hiking_in_the_wild.jpg
-  authors: "Shaoting Zhu<sup>*</sup>, Ziwen Zhuang<sup>*</sup>, <strong>Mengjie Zhao</strong>, Kun-Ying Lee, Hang Zhao"
+- name: "[Ctrl-F: Force as an Interface for Humanoid Loco-Manipulation](https://forcectrl.github.io/)"
+  video: ctrl_f_v5.mp4
+  authors: "<strong>Mengjie Zhao</strong><sup>*</sup>, <a href='https://thomaschen98.github.io/'>Yuxin Chen</a><sup>*</sup>, <a href='https://yiyangshao2003.github.io/'>Yiyang Shao</a>, <a href='https://chuye03.github.io/'>Chuye Hong</a>, <a href='https://github.com/JaydenChenjk'>Jiakang Chen</a>, <a href='https://hybrid-robotics.berkeley.edu/koushil/'>Koushil Sreenath</a>, <a href='https://me.berkeley.edu/people/masayoshi-tomizuka/'>Masayoshi Tomizuka</a>"
   authors_note: "<sup>*</sup> Equal contribution"
-  venue: "arXiv, 2026"
-  # info: "We present a scalable, end-to-end perceptive parkour framework designed for robust humanoid hiking. Our policy enables robust traversal of complex terrains at speeds up to 2.5 m/s."
+  venue: "Under review at ICRA 2027. IROS 2026 S2RCC Workshop."
+  arxiv: https://arxiv.org/abs/2611.05507
+  webpage: https://forcectrl.github.io/
+  info: "Ctrl-F proposes contact force as the interface between high-level planning and whole-body control, so that one controller can handle many objects and interaction types, and a learned planner can adapt the force online."
+
+- name: "SONAR: Can We Tune Humanoid Behavior Foundation Models for Dynamic and Contact-Rich Tasks?"
+  video: sonar_v2.mp4
+  authors: "<strong>Mengjie Zhao</strong><sup>*</sup>, <a href='https://thomaschen98.github.io/'>Yuxin Chen</a><sup>*</sup>, <a href='https://shaotingzhu.github.io/'>Shaoting Zhu</a>, Yu Hong, <a href='https://perkins729.github.io/'>Yunshen Wang</a>, <a href='https://mrmoore98.github.io/liuyicheng/'>Yicheng Liu</a>, <a href='https://scholar.google.com/citations?user=u-ELP2oAAAAJ'>Baijun Ye</a>, <a href='https://scholar.google.com/citations?user=BOYQK4IAAAAJ'>Xiaoyu Tian</a>, <a href='https://buzz-beater.github.io/'>Baoxiong Jia</a>, <a href='https://hangzhaomit.github.io/'>Hang Zhao</a>, <a href='https://siyuanhuang.com/'>Siyuan Huang</a>, <a href='https://me.berkeley.edu/people/masayoshi-tomizuka/'>Masayoshi Tomizuka</a>"
+  authors_note: "<sup>*</sup> Equal contribution"
+  venue: "RSS 2026 ExWBC Workshop (Oral); RSS 2026 WCBM Workshop. Journal version in preparation."
+  info: "SONAR asks whether perception, with an object mask as task semantics, can let a frozen humanoid behavior foundation model correct its motion locally when the reference motion is imperfect."
+
+- name: "[BURGER: Benchmarking and Understanding Robotic Generalization via Embodied dRawing](https://burger-bench.github.io/)"
+  video: burger_v5.mp4
+  authors: "<a href='https://openreview.net/profile?id=~Xiangyu_Xu10'>Xiangyu Xu</a><sup>*</sup>, <a href='https://taichi-pink.github.io/Ziyi-Liu/'>Ziyi Liu</a><sup>*</sup>, <a href='https://openreview.net/profile?id=~Bangshuai_Peng1'>Bangshuai Peng</a><sup>*</sup>, <strong>Mengjie Zhao</strong><sup>*</sup>, Zhengyang Fan, <a href='https://ctp314.github.io/'>Chenhao Lu</a>, <a href='https://iiis.tsinghua.edu.cn/en/People/Faculty/XuHuazhe.htm'>Huazhe Xu</a>, <a href='https://hukz18.github.io/'>Kaizhe Hu</a>"
+  authors_note: "<sup>*</sup> Equal contribution"
+  venue: "Under review at ICRA 2027"
+  arxiv: https://arxiv.org/abs/2610.40532
+  webpage: https://burger-bench.github.io/
+  code: https://github.com/Qxjyqzw/BURGER
+  info: "BURGER proposes embodied drawing as a benchmark for robotic generalization: drawing tasks carry rich semantic and spatial structure, scale in difficulty, and are scored automatically, which makes generalization measurable."
+
+- name: "[Hiking in the Wild: A Scalable Perceptive Parkour Framework for Humanoids](https://project-instinct.github.io/hiking-in-the-wild/)"
+  video: hiking_in_the_wild.mp4
+  authors: "<a href='https://shaotingzhu.github.io/'>Shaoting Zhu</a><sup>*</sup>, <a href='https://ziwenzhuang.github.io/'>Ziwen Zhuang</a><sup>*</sup>, <strong>Mengjie Zhao</strong>, <a href='https://kunying-lee.github.io/'>Kun-Ying Lee</a>, <a href='https://hangzhaomit.github.io/'>Hang Zhao</a>"
+  authors_note: "<sup>*</sup> Equal contribution"
+  venue: "CoRL 2026"
   webpage: https://project-instinct.github.io/hiking-in-the-wild/
   video-link: https://youtu.be/yBKv4N3V-5g
   arxiv: https://arxiv.org/abs/2601.07718
   code: https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/parkour/README.md
+  info: "Hiking in the Wild proposes a scalable framework for perceptive humanoid locomotion, training a single policy that transfers from simulation to unstructured outdoor terrain."
 
 - name: "[Deep Whole-body Parkour](https://project-instinct.github.io/deep-whole-body-parkour/)"
-  image: deep_whole_body_parkour.jpg
-  authors: "Ziwen Zhuang, Shaoting Zhu, <strong>Mengjie Zhao</strong>, Hang Zhao"
-  venue: "arXiv, 2026"
-  # info: "We present a framework where exteroceptive sensing is integrated into whole-body motion tracking, permitting a humanoid to perform highly dynamic, non-locomotion tasks on uneven terrain."
+  video: deep_whole_body_parkour_v2.mp4
+  authors: "<a href='https://ziwenzhuang.github.io/'>Ziwen Zhuang</a>, <a href='https://shaotingzhu.github.io/'>Shaoting Zhu</a>, <strong>Mengjie Zhao</strong>, <a href='https://hangzhaomit.github.io/'>Hang Zhao</a>"
+  venue: "arXiv, 2026. Released with Hiking in the Wild as Project Instinct (800+ GitHub stars)"
   webpage: https://project-instinct.github.io/deep-whole-body-parkour/
   video-link: https://youtu.be/3s0Al0kxUuo
   arxiv: https://arxiv.org/abs/2601.07701
   code: https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/shadowing/README.md
+  info: "Deep Whole-body Parkour adds depth perception to whole-body control, so that a humanoid tracking a reference motion can adapt to the terrain it actually encounters."
+
+- name: "PrO: Latent Proprioceptive Odometry for Goal-Reaching via Real-World Reinforcement Learning"
+  video: pro_v2.mp4
+  authors: "<a href='https://loversinsnow.github.io/'>Zhaoyang Cheng</a><sup>*</sup>, Hongde Hao<sup>*</sup>, <strong>Mengjie Zhao</strong>, <a href='https://shaotingzhu.github.io/'>Shaoting Zhu</a>, <a href='https://hangzhaomit.github.io/'>Hang Zhao</a>"
+  authors_note: "<sup>*</sup> Equal contribution"
+  venue: "Under review at ICRA 2027"
+  info: "PrO proposes learning a latent odometry representation from proprioception alone, and shows it can be trained for goal-reaching directly in the real world with reinforcement learning."

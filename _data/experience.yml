@@ -1,18 +1,18 @@
 - name: "[MSC Lab, UC Berkeley](https://msc.berkeley.edu/)"
   image: experience/berkeley_msc.jpg
-  role: Research Intern
+  role: Visiting Student Researcher
   dates: 2026.2 - present
-  advisor: "[Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html)"
+  advisor: "[Prof. Masayoshi Tomizuka](https://msc.berkeley.edu/people/tomizuka.html), in collaboration with [Prof. Koushil Sreenath](https://hybrid-robotics.berkeley.edu/koushil/)"
 
 - name: "[General Vision Lab, BIGAI](https://eng.bigai.ai/)"
   image: experience/bigai.png
   role: Research Intern
-  dates: 2025.10 - present
+  dates: 2025.11 - 2026.8
   advisor: "[Prof. Siyuan Huang](https://siyuanhuang.com/)"
 
 - name: "[MARS Lab, Tsinghua University](https://group.iiis.tsinghua.edu.cn/~marslab/)"
   image: experience/mars_lab.png
   logo_size: sm
   role: Undergraduate Researcher
-  dates: 2025.3 - present
+  dates: 2025.1 - present
   advisor: "[Prof. Hang Zhao](https://hangzhaomit.github.io/)"

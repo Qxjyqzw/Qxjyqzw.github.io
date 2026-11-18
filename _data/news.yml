@@ -1,2 +1,14 @@
-# - date: 1 January, 1940
-#   headline: "Example news here"
+- date: Nov 2026
+  headline: "We released [Ctrl-F](https://forcectrl.github.io/): force as an interface for humanoid loco-manipulation."
+- date: Oct 2026
+  headline: "We released [BURGER](https://burger-bench.github.io/), a benchmark for robotic generalization via embodied drawing."
+- date: Aug 2026
+  headline: "[Hiking in the Wild](https://project-instinct.github.io/hiking-in-the-wild/) was accepted to CoRL 2026."
+- date: Jul 2026
+  headline: "SONAR was presented as an oral at the RSS 2026 ExWBC workshop."
+- date: Feb 2026
+  headline: "Joined [MSC Lab](https://msc.berkeley.edu/) at UC Berkeley as a visiting student researcher."
+- date: Jan 2026
+  headline: "We released [Project Instinct](https://project-instinct.github.io/), with [Hiking in the Wild](https://project-instinct.github.io/hiking-in-the-wild/) and [Deep Whole-body Parkour](https://project-instinct.github.io/deep-whole-body-parkour/)."
+- date: Nov 2025
+  headline: "Joined [General Vision Lab](https://eng.bigai.ai/) at BIGAI as a research intern."

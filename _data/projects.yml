@@ -1,6 +1,13 @@
+- name: "Cloud Recesses (流云山庄)"
+  video: liuyun_v7.mp4
+  info: "A classical Chinese studio for shaping daily life: incense-timed focus, and AI-assisted planning, journaling and reading. Live 2.5D scenes with animated weather, soundscapes and guqin music. To be wrapped up and published once I find a free weekend; the weekend is still being located."
+  tags:
+    - React
+    - PixiJS
+    - Audio
 
 - name: "[Drones: 3D UAV Battle Game](https://qxjyqzw.github.io/Drones/)"
-  video: drones.mp4
+  video: drones_v2.mp4
   info: A fully interactive 3D UAV battle game developed using Three.js and Cannon-es.js.
   code: https://github.com/He-Ren/ACG_Project_2024Fall
   webpage: https://qxjyqzw.github.io/Drones/
