@@ -17,7 +17,7 @@ $serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, "Noto Ser
 $sans: "Source Sans 3", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 html { font-size: 100% !important; }
-@media (min-width: 900px) { html { font-size: 120% !important; } }
+@media (min-width: 900px) { html { font-size: 96% !important; } }
 
 body {
   background: $paper;
@@ -36,7 +36,7 @@ strong, b { font-weight: 600; color: $ink; }
 
 h1, h2, h3, h4, h5 { font-family: $serif; color: $ink; font-weight: 500; letter-spacing: -0.005em; }
 
-.container-fluid { max-width: 1280px; padding-top: 2rem; }
+.container-fluid { max-width: 1024px; padding-top: 2rem; }
 @media (min-width: 768px) {
   #homeid { flex: 0 0 73%; max-width: 73%; }
   #newsid { flex: 0 0 27%; max-width: 27%; }
@@ -151,8 +151,8 @@ h1, h2, h3, h4, h5 { font-family: $serif; color: $ink; font-weight: 500; letter-
 .research-button:hover, .project-button:hover { color: $accent-dark !important; text-decoration: underline; text-underline-offset: 3px; }
 
 /* experience rows: logos small and quiet */
-.research-media-logo img, .research-media-logo p img { max-width: 92px; max-height: 64px; }
-.research-media-logo-sm img, .research-media-logo-sm p img { max-width: 48px; max-height: 44px; }
+.research-media-logo img, .research-media-logo p img { max-width: 74px; max-height: 52px; }
+.research-media-logo-sm img, .research-media-logo-sm p img { max-width: 38px; max-height: 35px; }
 
 /* ---- sidebar: no box ---- */
 #newsid { padding-top: 1.2rem; }
