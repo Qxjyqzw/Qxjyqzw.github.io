@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5 { font-family: $serif; color: $ink; font-weight: 500; letter-
 .navbar-dark .navbar-nav { display: none; }
 .navbar-dark .navbar-nav .nav-link { color: $ink-3 !important; font-size: 0.95rem; letter-spacing: 0.02em; }
 .navbar-dark .navbar-nav .nav-link:hover { color: $accent !important; }
-.navbar-dark .navbar-toggler { border-color: $hair; }
+.navbar-dark .navbar-toggler { display: none !important; }
 .navbar-dark .navbar-toggler-icon { filter: invert(0.7); }
 
 /* ---- section headings: serif, sentence case, full-width hairline ---- */
