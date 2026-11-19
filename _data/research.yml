@@ -16,7 +16,7 @@
 
 - name: "[BURGER: Benchmarking and Understanding Robotic Generalization via Embodied dRawing](https://burger-bench.github.io/)"
   video: burger_v5.mp4
-  authors: "<a href='https://openreview.net/profile?id=~Xiangyu_Xu10'>Xiangyu Xu</a><sup>*</sup>, <a href='https://taichi-pink.github.io/Ziyi-Liu/'>Ziyi Liu</a><sup>*</sup>, <a href='https://openreview.net/profile?id=~Bangshuai_Peng1'>Bangshuai Peng</a><sup>*</sup>, <strong>Mengjie Zhao</strong><sup>*</sup>, Zhengyang Fan, <a href='https://ctp314.github.io/'>Chenhao Lu</a>, <a href='https://iiis.tsinghua.edu.cn/en/People/Faculty/XuHuazhe.htm'>Huazhe Xu</a>, <a href='https://hukz18.github.io/'>Kaizhe Hu</a>"
+  authors: "<a href='https://openreview.net/profile?id=~Xiangyu_Xu10'>Xiangyu Xu</a><sup>*</sup>, <a href='https://openreview.net/profile?id=~Bangshuai_Peng1'>Bangshuai Peng</a><sup>*</sup>, <a href='https://taichi-pink.github.io/Ziyi-Liu/'>Ziyi Liu</a><sup>*</sup>, <strong>Mengjie Zhao</strong><sup>*</sup>, <a href='https://ctp314.github.io/'>Chenhao Lu</a>, Zhengyang Fan, <a href='https://iiis.tsinghua.edu.cn/en/People/Faculty/XuHuazhe.htm'>Huazhe Xu</a>, <a href='https://hukz18.github.io/'>Kaizhe Hu</a>"
   authors_note: "<sup>*</sup> Equal contribution"
   venue: "Under review at ICRA 2027"
   arxiv: https://arxiv.org/abs/2610.40532
