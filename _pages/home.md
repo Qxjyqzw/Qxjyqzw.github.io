@@ -209,4 +209,4 @@ Recently I have been drawn to the idea that the high level should give only a co
 {% endfor %}
 </div>
 
-* I play the *guqin* and *ruan* (traditional Chinese stringed instruments) and am a member of the Tsinghua University Chinese Traditional Orchestra. I practice Chinese calligraphy and enjoy reading, writing, and traveling.
+* I play the <span class="hover-pic" tabindex="0"><em>guqin</em><span class="hover-pic-img"><img src="{{ site.url }}{{ site.baseurl }}/images/hobbies/guqin.jpg" alt="guqin" loading="lazy"></span></span> and <span class="hover-pic" tabindex="0"><em>ruan</em><span class="hover-pic-img"><img src="{{ site.url }}{{ site.baseurl }}/images/hobbies/ruan.jpg" alt="ruan" loading="lazy"></span></span> (traditional Chinese stringed instruments) and am a member of the Tsinghua University Chinese Traditional Orchestra. I practice Chinese calligraphy and enjoy reading, writing, and traveling.
