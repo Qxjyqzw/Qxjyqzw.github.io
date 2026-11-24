@@ -1,0 +1,26 @@
+<script>
+/* Muted looping clips: play when on screen, pause when off. WeChat's in-app
+   browser blocks plain autoplay until its JS bridge is ready or the user touches
+   the page, so retry on those events too. */
+(function () {
+  var vids = [].slice.call(document.querySelectorAll('video.research-video, video.project-video'));
+  if (!vids.length) return;
+  function play(v) { v.muted = true; var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  function playVisible() { vids.forEach(function (v) { if (v.getAttribute('data-off') !== '1') play(v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) { v.removeAttribute('data-off'); play(v); }
+        else { v.setAttribute('data-off', '1'); v.pause(); }
+      });
+    }, { rootMargin: '200px 0px' });
+    vids.forEach(function (v) { io.observe(v); });
+  } else { playVisible(); }
+  document.addEventListener('WeixinJSBridgeReady', playVisible, false);
+  if (window.WeixinJSBridge) playVisible();
+  function once() { playVisible(); document.removeEventListener('touchstart', once); document.removeEventListener('click', once); }
+  document.addEventListener('touchstart', once, { passive: true });
+  document.addEventListener('click', once);
+})();
+</script>

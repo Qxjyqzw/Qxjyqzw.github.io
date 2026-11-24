@@ -62,7 +62,7 @@ Recently I have been drawn to the idea that the high level should give only a co
   <img src="{{ site.url }}{{ site.baseurl }}/images/{{ research.image }}" width="100%" style="max-width:100%; display:block;"/>
 {% endif %}
 {% if research.video %}
-  <video class="research-video" autoplay loop muted playsinline preload="auto">
+  <video class="research-video" autoplay loop muted playsinline webkit-playsinline x5-playsinline preload="metadata" poster="{{ site.url }}{{ site.baseurl }}/videos/posters/{{ research.video | replace: '.mp4', '.jpg' }}">
     <source src="{{ site.url }}{{ site.baseurl }}/videos/{{ research.video }}" type="video/mp4">
   </video>
 {% endif %}
@@ -166,7 +166,7 @@ Recently I have been drawn to the idea that the high level should give only a co
   <img src="{{ site.url }}{{ site.baseurl }}/images/{{ project.image }}" width="100%" style="max-width:100%; display:block;"/>
 {% endif %}
 {% if project.video %}
-  <video class="project-video" autoplay loop muted playsinline preload="auto">
+  <video class="project-video" autoplay loop muted playsinline webkit-playsinline x5-playsinline preload="metadata" poster="{{ site.url }}{{ site.baseurl }}/videos/posters/{{ project.video | replace: '.mp4', '.jpg' }}">
     <source src="{{ site.url }}{{ site.baseurl }}/videos/{{ project.video }}" type="video/mp4">
   </video>
 {% endif %}
@@ -210,3 +210,5 @@ Recently I have been drawn to the idea that the high level should give only a co
 </div>
 
 * I play the <span class="hover-pic" tabindex="0"><em>guqin</em><span class="hover-pic-img"><img src="{{ site.url }}{{ site.baseurl }}/images/hobbies/guqin.jpg" alt="guqin" loading="lazy"></span></span> and <span class="hover-pic" tabindex="0"><em>ruan</em><span class="hover-pic-img"><img src="{{ site.url }}{{ site.baseurl }}/images/hobbies/ruan.jpg" alt="ruan" loading="lazy"></span></span> (traditional Chinese stringed instruments) and am a member of the Tsinghua University Chinese Traditional Orchestra. I practice Chinese calligraphy and enjoy reading, writing, and traveling.
+
+{% include video-autoplay.html %}
