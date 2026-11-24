@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Mengjie Zhao</title>
+    <meta name="description" content="Academic webpage of Mengjie Zhao">
+    <link rel="stylesheet" href="/assets/main.css?v=1795484114">
+    <link rel="canonical " href="/ ">
+    <link rel="icon" href="/favicon.svg?v=4" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico?v=4" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=4">
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css ">
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css ">
+    <!-- <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css "> -->
+    <link rel="preconnect " href="https://player.vimeo.com ">
+    <link rel="preconnect " href="https://i.vimeocdn.com ">
+    <link rel="preconnect " href="https://f.vimeocdn.com ">  <script>
+MathJax = {
+    tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+    tags: 'ams'  // should be 'ams', 'none', or 'all' }. This line makes the equation numbering and labeling work
+    }, 
+    svg: {
+    fontCache: 'global'
+    }
+};
+</script>
+<script
+    type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script> 
+
+</head>
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id="
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">
+     <img src="/favicon-32x32.png" width="30" height="30" style="margin-right:5px" class="d-inline-block align-top" alt="">
+      Mengjie Zhao
+    </a>
+    <button class="toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="/">Home</a>
+            
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid">
+      <div class="row">
+          <div id="homeid" class="col-sm-8 col-xs-12">
+	<!-- ### Welcome!
+
+Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
+It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
+Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
+It also helps us to understand the fundamental principles that govern the behavior of matter and energy, and to explore the limits of our current knowledge.
+Theoretical physics helps us to make progress in a wide range of fields, including cosmology, particle physics, and quantum mechanics, and it has led to many important discoveries and technological innovations.
+
+<div class="container">
+<div class="row">
+<center>
+<img src="/images/banner.jpg" width="100%"/><br/>
+Examples of Feynman diagrams. <br/>
+Feynman R., The theory of positrons. <i>Phys. Rev.</i> (1949)
+</center>
+</div>
+</div>
+<br/> -->
+
+<p>I am a senior undergraduate student at <a href="https://iiis.tsinghua.edu.cn/en/">Institute for Interdisciplinary Information Sciences (IIIS, Yao Class)</a>, Tsinghua University, majoring in Computer Science and Technology.</p>
+
+<p>Currently, I am a visiting student researcher at <a href="https://msc.berkeley.edu/">MSC Lab, UC Berkeley</a>, advised by <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a>, where I also work with <a href="https://hybrid-robotics.berkeley.edu/koushil/">Prof. Koushil Sreenath</a>. Since 2025, I have also been fortunate to work with <a href="https://hangzhaomit.github.io/">Prof. Hang Zhao</a> at <a href="https://group.iiis.tsinghua.edu.cn/~marslab/">MARS Lab, Tsinghua University</a> and <a href="https://siyuanhuang.com/">Prof. Siyuan Huang</a> at <a href="https://eng.bigai.ai/">General Vision Lab, BIGAI</a>.</p>
+
+<p>I am always excited to connect for academic discussions, potential collaborations, or casual chats. I am actively seeking PhD opportunities for <strong>Fall 2027</strong> and look forward to connecting via email.</p>
+
+<h2 class="section-subtitle text-primary accent-left">Research Interests</h2>
+
+<p>My research aims to build robotic systems that are reactive at the level of control and general at the level of task reasoning. I currently work on humanoid loco-manipulation and dexterous manipulation, where the research problem I find most compelling is how a learned controller and a high-level policy should be coupled. I think about it along two axes.</p>
+
+<p><strong>The interface between levels.</strong> How to build a hierarchy across modules that run at different control frequencies and levels of abstraction, from RL-trained controllers to VLAs or agentic systems, and what interface should sit between them.</p>
+
+<p><strong>Generalization through hierarchy.</strong> How such a system generalizes, and especially whether the hierarchy itself can be an advantage for generalization rather than a compromise forced by control rate.</p>
+
+<p>Recently I have been drawn to the idea that the high level should give only a coarse representation of the task, while the controller owns more of the instinct-level intelligence and carries its own information about the object it acts on.</p>
+
+<h2 class="section-subtitle text-primary accent-left">News</h2>
+
+<ul class="news-list">
+
+<li><span class="news-date">Nov 2026</span><span class="news-text">We released <a href="https://forcectrl.github.io/">Ctrl-F</a>: force as an interface for humanoid loco-manipulation.</span></li>
+
+<li><span class="news-date">Oct 2026</span><span class="news-text">We released <a href="https://burger-bench.github.io/">BURGER</a>, a benchmark for robotic generalization via embodied drawing.</span></li>
+
+<li><span class="news-date">Aug 2026</span><span class="news-text"><a href="https://project-instinct.github.io/hiking-in-the-wild/">Hiking in the Wild</a> was accepted to CoRL 2026.</span></li>
+
+<li><span class="news-date">Jul 2026</span><span class="news-text">SONAR was presented as an oral at the RSS 2026 ExWBC workshop.</span></li>
+
+<li><span class="news-date">Feb 2026</span><span class="news-text">Joined <a href="https://msc.berkeley.edu/">MSC Lab</a> at UC Berkeley as a visiting student researcher.</span></li>
+
+<li><span class="news-date">Jan 2026</span><span class="news-text">We released <a href="https://project-instinct.github.io/">Project Instinct</a>, with <a href="https://project-instinct.github.io/hiking-in-the-wild/">Hiking in the Wild</a> and <a href="https://project-instinct.github.io/deep-whole-body-parkour/">Deep Whole-body Parkour</a>.</span></li>
+
+<li><span class="news-date">Nov 2025</span><span class="news-text">Joined <a href="https://eng.bigai.ai/">General Vision Lab</a> at BIGAI as a research intern.</span></li>
+
+</ul>
+
+<h2 class="section-subtitle text-primary accent-left">Research</h2>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media">
+
+      <video class="research-video" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" x5-playsinline="" preload="metadata" poster="/videos/posters/ctrl_f_v5.jpg">
+    <source src="/videos/ctrl_f_v5.mp4" type="video/mp4" />
+  </video>
+
+    </div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4><a href="https://forcectrl.github.io/">Ctrl-F: Force as an Interface for Humanoid Loco-Manipulation</a></h4>
+      </div>
+
+      <div class="research-info">
+
+<p><strong>Mengjie Zhao</strong><sup>*</sup>, <a href="https://thomaschen98.github.io/">Yuxin Chen</a><sup>*</sup>, <a href="https://yiyangshao2003.github.io/">Yiyang Shao</a>, <a href="https://chuye03.github.io/">Chuye Hong</a>, <a href="https://github.com/JaydenChenjk">Jiakang Chen</a>, <a href="https://hybrid-robotics.berkeley.edu/koushil/">Koushil Sreenath</a>, <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Masayoshi Tomizuka</a> <span class="research-authors-note"><sup>*</sup> Equal contribution</span><br />Under review at ICRA 2027. IROS 2026 S2RCC Workshop.</p>
+
+</div>
+
+      <div class="research-links">
+
+<a class="research-button" href="https://arxiv.org/abs/2611.05507" target="_blank" rel="noopener">
+    <span class="research-button-label">Paper</span>
+</a>
+
+
+
+
+
+<a class="research-button" href="https://forcectrl.github.io/" target="_blank" rel="noopener">
+    <span class="research-button-label">Project page</span>
+</a>
+
+
+
+
+
+
+</div>
+
+      <p class="research-desc">Ctrl-F proposes contact force as the interface between high-level planning and whole-body control, so that one controller can handle many objects and interaction types, and a learned planner can adapt the force online.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media">
+
+      <video class="research-video" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" x5-playsinline="" preload="metadata" poster="/videos/posters/sonar_v2.jpg">
+    <source src="/videos/sonar_v2.mp4" type="video/mp4" />
+  </video>
+
+    </div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4>SONAR: Can We Tune Humanoid Behavior Foundation Models for Dynamic and Contact-Rich Tasks?</h4>
+      </div>
+
+      <div class="research-info">
+
+<p><strong>Mengjie Zhao</strong><sup>*</sup>, <a href="https://thomaschen98.github.io/">Yuxin Chen</a><sup>*</sup>, <a href="https://shaotingzhu.github.io/">Shaoting Zhu</a>, Yu Hong, <a href="https://perkins729.github.io/">Yunshen Wang</a>, <a href="https://mrmoore98.github.io/liuyicheng/">Yicheng Liu</a>, <a href="https://scholar.google.com/citations?user=u-ELP2oAAAAJ">Baijun Ye</a>, <a href="https://scholar.google.com/citations?user=BOYQK4IAAAAJ">Xiaoyu Tian</a>, <a href="https://buzz-beater.github.io/">Baoxiong Jia</a>, <a href="https://hangzhaomit.github.io/">Hang Zhao</a>, <a href="https://siyuanhuang.com/">Siyuan Huang</a>, <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Masayoshi Tomizuka</a> <span class="research-authors-note"><sup>*</sup> Equal contribution</span><br />RSS 2026 ExWBC Workshop (Oral); RSS 2026 WCBM Workshop. Journal version in preparation.</p>
+
+</div>
+
+      <div class="research-links">
+
+
+
+
+
+
+
+
+
+
+</div>
+
+      <p class="research-desc">SONAR asks whether perception, with an object mask as task semantics, can let a frozen humanoid behavior foundation model correct its motion locally when the reference motion is imperfect.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media">
+
+      <video class="research-video" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" x5-playsinline="" preload="metadata" poster="/videos/posters/burger_v5.jpg">
+    <source src="/videos/burger_v5.mp4" type="video/mp4" />
+  </video>
+
+    </div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4><a href="https://burger-bench.github.io/">BURGER: Benchmarking and Understanding Robotic Generalization via Embodied dRawing</a></h4>
+      </div>
+
+      <div class="research-info">
+
+<p><a href="https://openreview.net/profile?id=~Xiangyu_Xu10">Xiangyu Xu</a><sup>*</sup>, <a href="https://openreview.net/profile?id=~Bangshuai_Peng1">Bangshuai Peng</a><sup>*</sup>, <a href="https://taichi-pink.github.io/Ziyi-Liu/">Ziyi Liu</a><sup>*</sup>, <strong>Mengjie Zhao</strong><sup>*</sup>, <a href="https://ctp314.github.io/">Chenhao Lu</a>, Zhengyang Fan, <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/XuHuazhe.htm">Huazhe Xu</a>, <a href="https://hukz18.github.io/">Kaizhe Hu</a> <span class="research-authors-note"><sup>*</sup> Equal contribution</span><br />Under review at ICRA 2027</p>
+
+</div>
+
+      <div class="research-links">
+
+<a class="research-button" href="https://arxiv.org/abs/2610.40532" target="_blank" rel="noopener">
+    <span class="research-button-label">Paper</span>
+</a>
+
+
+
+<a class="research-button" href="https://github.com/Qxjyqzw/BURGER" target="_blank" rel="noopener">
+    <span class="research-button-label">Code</span>
+</a>
+
+
+
+<a class="research-button" href="https://burger-bench.github.io/" target="_blank" rel="noopener">
+    <span class="research-button-label">Project page</span>
+</a>
+
+
+
+
+
+
+</div>
+
+      <p class="research-desc">BURGER proposes embodied drawing as a benchmark for robotic generalization: drawing tasks carry rich semantic and spatial structure, scale in difficulty, and are scored automatically, which makes generalization measurable.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media">
+
+      <video class="research-video" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" x5-playsinline="" preload="metadata" poster="/videos/posters/hiking_in_the_wild.jpg">
+    <source src="/videos/hiking_in_the_wild.mp4" type="video/mp4" />
+  </video>
+
+    </div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4><a href="https://project-instinct.github.io/hiking-in-the-wild/">Hiking in the Wild: A Scalable Perceptive Parkour Framework for Humanoids</a></h4>
+      </div>
+
+      <div class="research-info">
+
+<p><a href="https://shaotingzhu.github.io/">Shaoting Zhu</a><sup>*</sup>, <a href="https://ziwenzhuang.github.io/">Ziwen Zhuang</a><sup>*</sup>, <strong>Mengjie Zhao</strong>, <a href="https://kunying-lee.github.io/">Kun-Ying Lee</a>, <a href="https://hangzhaomit.github.io/">Hang Zhao</a> <span class="research-authors-note"><sup>*</sup> Equal contribution</span><br />CoRL 2026</p>
+
+</div>
+
+      <div class="research-links">
+
+<a class="research-button" href="https://arxiv.org/abs/2601.07718" target="_blank" rel="noopener">
+    <span class="research-button-label">Paper</span>
+</a>
+
+
+
+<a class="research-button" href="https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/parkour/README.md" target="_blank" rel="noopener">
+    <span class="research-button-label">Code</span>
+</a>
+
+
+
+<a class="research-button" href="https://project-instinct.github.io/hiking-in-the-wild/" target="_blank" rel="noopener">
+    <span class="research-button-label">Project page</span>
+</a>
+
+
+
+<a class="research-button" href="https://youtu.be/yBKv4N3V-5g" target="_blank" rel="noopener">
+    <span class="research-button-label">Video</span>
+</a>
+
+
+
+
+</div>
+
+      <p class="research-desc">Hiking in the Wild proposes a scalable framework for perceptive humanoid locomotion, training a single policy that transfers from simulation to unstructured outdoor terrain.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media">
+
+      <video class="research-video" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" x5-playsinline="" preload="metadata" poster="/videos/posters/deep_whole_body_parkour_v2.jpg">
+    <source src="/videos/deep_whole_body_parkour_v2.mp4" type="video/mp4" />
+  </video>
+
+    </div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4><a href="https://project-instinct.github.io/deep-whole-body-parkour/">Deep Whole-body Parkour</a></h4>
+      </div>
+
+      <div class="research-info">
+
+<p><a href="https://ziwenzhuang.github.io/">Ziwen Zhuang</a>, <a href="https://shaotingzhu.github.io/">Shaoting Zhu</a>, <strong>Mengjie Zhao</strong>, <a href="https://hangzhaomit.github.io/">Hang Zhao</a><br />arXiv, 2026. Released with Hiking in the Wild as Project Instinct (800+ GitHub stars)</p>
+
+</div>
+
+      <div class="research-links">
+
+<a class="research-button" href="https://arxiv.org/abs/2601.07701" target="_blank" rel="noopener">
+    <span class="research-button-label">Paper</span>
+</a>
+
+
+
+<a class="research-button" href="https://github.com/project-instinct/InstinctLab/blob/main/source/instinctlab/instinctlab/tasks/shadowing/README.md" target="_blank" rel="noopener">
+    <span class="research-button-label">Code</span>
+</a>
+
+
+
+<a class="research-button" href="https://project-instinct.github.io/deep-whole-body-parkour/" target="_blank" rel="noopener">
+    <span class="research-button-label">Project page</span>
+</a>
+
+
+
+<a class="research-button" href="https://youtu.be/3s0Al0kxUuo" target="_blank" rel="noopener">
+    <span class="research-button-label">Video</span>
+</a>
+
+
+
+
+</div>
+
+      <p class="research-desc">Deep Whole-body Parkour adds depth perception to whole-body control, so that a humanoid tracking a reference motion can adapt to the terrain it actually encounters.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media">
+
+      <video class="research-video" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" x5-playsinline="" preload="metadata" poster="/videos/posters/pro_v2.jpg">
+    <source src="/videos/pro_v2.mp4" type="video/mp4" />
+  </video>
+
+    </div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4>PrO: Latent Proprioceptive Odometry for Goal-Reaching via Real-World Reinforcement Learning</h4>
+      </div>
+
+      <div class="research-info">
+
+<p><a href="https://loversinsnow.github.io/">Zhaoyang Cheng</a><sup>*</sup>, Hongde Hao<sup>*</sup>, <strong>Mengjie Zhao</strong>, <a href="https://shaotingzhu.github.io/">Shaoting Zhu</a>, <a href="https://hangzhaomit.github.io/">Hang Zhao</a> <span class="research-authors-note"><sup>*</sup> Equal contribution</span><br />Under review at ICRA 2027</p>
+
+</div>
+
+      <div class="research-links">
+
+
+
+
+
+
+
+
+
+
+</div>
+
+      <p class="research-desc">PrO proposes learning a latent odometry representation from proprioception alone, and shows it can be trained for goal-reaching directly in the real world with reinforcement learning.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 class="section-subtitle text-primary accent-left">Experience</h2>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media research-media-logo">
+
+<img src="/images/experience/berkeley_msc.jpg" alt="" style="display:block;" />
+
+</div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4><a href="https://msc.berkeley.edu/">MSC Lab, UC Berkeley</a></h4>
+      </div>
+
+      <div class="research-info">
+        <p>Visiting Student Researcher: 2026.2 - present<br />Research Advisor: <a href="https://msc.berkeley.edu/people/tomizuka.html">Prof. Masayoshi Tomizuka</a>, in collaboration with <a href="https://hybrid-robotics.berkeley.edu/koushil/">Prof. Koushil Sreenath</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media research-media-logo">
+
+<img src="/images/experience/bigai.png" alt="" style="display:block;" />
+
+</div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4><a href="https://eng.bigai.ai/">General Vision Lab, BIGAI</a></h4>
+      </div>
+
+      <div class="research-info">
+        <p>Research Intern: 2025.11 - 2026.8<br />Research Advisor: <a href="https://siyuanhuang.com/">Prof. Siyuan Huang</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="row">
+
+    <div class="col-sm-4 research-media research-media-logo research-media-logo-sm">
+
+<img src="/images/experience/mars_lab.png" alt="" style="display:block;" />
+
+</div>
+
+    <div class="col-sm-8 col-xs-12">
+
+      <div class="research-title">
+        <h4><a href="https://group.iiis.tsinghua.edu.cn/~marslab/">MARS Lab, Tsinghua University</a></h4>
+      </div>
+
+      <div class="research-info">
+        <p>Undergraduate Researcher: 2025.1 - present<br />Research Advisor: <a href="https://hangzhaomit.github.io/">Prof. Hang Zhao</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<h2 class="section-subtitle accent-left text-primary">Beyond Research</h2>
+
+<ul>
+  <li>I like creating playful, interactive things. So far they have all lived on the web. I am curious what I could create out here in the physical world.</li>
+</ul>
+
+<div class="beyond-projects">
+
+
+<div class="jumbotron">
+<div class="row">
+
+<div class="col-sm-4 project-media">
+
+
+  <video class="project-video" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" x5-playsinline="" preload="metadata" poster="/videos/posters/liuyun_v7.jpg">
+    <source src="/videos/liuyun_v7.mp4" type="video/mp4" />
+  </video>
+
+</div>
+
+<div class="col-sm-8 col-xs-12">
+
+<div class="project-title">
+<h4>Cloud Recesses (流云山庄)</h4>
+</div>
+
+
+<div class="project-links">
+
+
+
+
+
+</div>
+
+<div class="project-info">
+<p>A classical Chinese studio for shaping daily life: incense-timed focus, and AI-assisted planning, journaling and reading. Live 2.5D scenes with animated weather, soundscapes and guqin music. To be wrapped up and published once I find a free weekend; the weekend is still being located.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="jumbotron">
+<div class="row">
+
+<div class="col-sm-4 project-media">
+
+
+  <video class="project-video" autoplay="" loop="" muted="" playsinline="" webkit-playsinline="" x5-playsinline="" preload="metadata" poster="/videos/posters/drones_v2.jpg">
+    <source src="/videos/drones_v2.mp4" type="video/mp4" />
+  </video>
+
+</div>
+
+<div class="col-sm-8 col-xs-12">
+
+<div class="project-title">
+<h4><a href="https://qxjyqzw.github.io/Drones/">Drones: 3D UAV Battle Game</a></h4>
+</div>
+
+
+<div class="project-links">
+
+<a class="project-button" href="https://qxjyqzw.github.io/Drones/" target="_blank" rel="noopener">
+    <span class="project-button-label">Webpage</span>
+</a>
+
+
+
+<a class="project-button" href="https://github.com/He-Ren/ACG_Project_2024Fall" target="_blank" rel="noopener">
+    <span class="project-button-label">Code</span>
+</a>
+
+
+
+<a class="project-button" href="/papers/drones.pdf" target="_blank" rel="noopener">
+    <span class="project-button-label">PDF</span>
+</a>
+
+</div>
+
+<div class="project-info">
+<p>A fully interactive 3D UAV battle game developed using Three.js and Cannon-es.js.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<ul>
+  <li>I play the <span class="hover-pic" tabindex="0"><em>guqin</em><span class="hover-pic-img"><img src="/images/hobbies/guqin.jpg" alt="guqin" loading="lazy" /></span></span> and <span class="hover-pic" tabindex="0"><em>ruan</em><span class="hover-pic-img"><img src="/images/hobbies/ruan.jpg" alt="ruan" loading="lazy" /></span></span> (traditional Chinese stringed instruments) and am a member of the Tsinghua University Chinese Traditional Orchestra. I practice Chinese calligraphy and enjoy reading, writing, and traveling.</li>
+</ul>
+
+<script>
+/* Muted looping clips: play when on screen, pause when off.
+   WeChat's in-app browser only honours play() inside its JS bridge context
+   (bridge ready, or a WeixinJSBridge.invoke callback) or a user touch.
+   So: route every play() through the bridge, unlock all clips once when the
+   bridge is ready, and retry visible paused clips on each touch. */
+(function () {
+  var vids = [].slice.call(document.querySelectorAll('video.research-video, video.project-video'));
+  if (!vids.length) return;
+  function viaBridge(fn) {
+    var B = window.WeixinJSBridge;
+    if (B && B.invoke) { try { B.invoke('getNetworkType', {}, fn); return; } catch (e) {} }
+    fn();
+  }
+  function rawPlay(v) { v.muted = true; var p = v.play(); return (p && p.then) ? p : { then: function (f) { f(); return { catch: function () {} }; }, catch: function () {} }; }
+  function play(v) { viaBridge(function () { rawPlay(v).catch(function () {}); }); }
+  function onScreen(v) { return v.getAttribute('data-off') !== '1'; }
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) { v.removeAttribute('data-off'); play(v); }
+        else { v.setAttribute('data-off', '1'); if (!v.paused) v.pause(); }
+      });
+    }, { rootMargin: '200px 0px' });
+    vids.forEach(function (v) { io.observe(v); });
+  } else { vids.forEach(play); }
+
+  function unlockAll() {
+    viaBridge(function () {
+      vids.forEach(function (v) {
+        rawPlay(v).then(function () { if (!onScreen(v)) v.pause(); }).catch(function () {});
+      });
+    });
+  }
+  if (window.WeixinJSBridge) unlockAll();
+  else document.addEventListener('WeixinJSBridgeReady', unlockAll, false);
+
+  function retryVisible() { vids.forEach(function (v) { if (onScreen(v) && v.paused) rawPlay(v).catch(function () {}); }); }
+  document.addEventListener('touchstart', retryVisible, { passive: true });
+  document.addEventListener('click', retryVisible);
+})();
+</script>
+
+
+  </div>
+  
+  <div id="newsid" class="col-sm-4 col-xs-12 sidebar sticky-sidebar" >
+	<div>
+
+<div class="jumbotron">
+   <center>
+   <img src="/images/headshot.png" width="60%" style="block:inline; margin-left:auto; margin-right:auto; margin-bottom:5px;"/>
+   <h4>Mengjie Zhao</h4>
+   <div style="margin-bottom:3px">
+   <a href="mailto:zhaomj23@mails.tsinghua.edu.cn" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> 
+   
+    <a href="https://scholar.google.com/citations?user=DJREXEcAAAAJ" target="_blank"><i class="fa-brands fa-google-scholar fa-2x"></i></a> 
+    <a href="https://github.com/Qxjyqzw" target="_blank"><i class="fa-brands fa-github-square fa-2x"></i></a> 
+   
+    <a href="https://www.linkedin.com/in/mengjie-zhao-53ba63337" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a> 
+    <a href="https://x.com/qxjyqzw" target="_blank"><i class="fa-brands fa-x-twitter fa-2x"></i></a> 
+  </div>
+  </center>
+
+  <ul style="overflow: hidden">
+    
+      <li>2023&#8211;present, BS in CS, Tsinghua University</li>
+    
+  </ul>
+
+  <!-- print email address, with margin bottom 5px, center--> 
+  
+  <p style="margin-bottom:5px; text-align:center;">zhaomj23@mails.tsinghua.edu.cn</p>
+  <!-- <p style="margin-bottom:5px;"><a href="mailto:zhaomj23@mails.tsinghua.edu.cn" target="_blank">zhaomj23@mails.tsinghua.edu.cn</a></p> -->
+  
+
+</div>
+
+
+
+  </div> 
+
+      </div>
+    </div>
+
+    <br/>
+<section id="footer">
+<div class="container-footer">
+  <div class="panel-footer">
+    <center><p>&copy; 2026 Mengjie Zhao &middot; <a href="mailto:zhaomj23@mails.tsinghua.edu.cn" target="_blank"><i class="fa fa-envelope fa-1x"></i> Contact Mengjie via email</a>
+</p></center>
+  </div>
+</div>
+</section>
+
+<script src="/assets/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+
+</html>
