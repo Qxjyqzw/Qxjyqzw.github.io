@@ -1,26 +1,44 @@
 <script>
-/* Muted looping clips: play when on screen, pause when off. WeChat's in-app
-   browser blocks plain autoplay until its JS bridge is ready or the user touches
-   the page, so retry on those events too. */
+/* Muted looping clips: play when on screen, pause when off.
+   WeChat's in-app browser only honours play() inside its JS bridge context
+   (bridge ready, or a WeixinJSBridge.invoke callback) or a user touch.
+   So: route every play() through the bridge, unlock all clips once when the
+   bridge is ready, and retry visible paused clips on each touch. */
 (function () {
   var vids = [].slice.call(document.querySelectorAll('video.research-video, video.project-video'));
   if (!vids.length) return;
-  function play(v) { v.muted = true; var p = v.play(); if (p && p.catch) p.catch(function () {}); }
-  function playVisible() { vids.forEach(function (v) { if (v.getAttribute('data-off') !== '1') play(v); }); }
+  function viaBridge(fn) {
+    var B = window.WeixinJSBridge;
+    if (B && B.invoke) { try { B.invoke('getNetworkType', {}, fn); return; } catch (e) {} }
+    fn();
+  }
+  function rawPlay(v) { v.muted = true; var p = v.play(); return (p && p.then) ? p : { then: function (f) { f(); return { catch: function () {} }; }, catch: function () {} }; }
+  function play(v) { viaBridge(function () { rawPlay(v).catch(function () {}); }); }
+  function onScreen(v) { return v.getAttribute('data-off') !== '1'; }
+
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
         var v = e.target;
         if (e.isIntersecting) { v.removeAttribute('data-off'); play(v); }
-        else { v.setAttribute('data-off', '1'); v.pause(); }
+        else { v.setAttribute('data-off', '1'); if (!v.paused) v.pause(); }
       });
     }, { rootMargin: '200px 0px' });
     vids.forEach(function (v) { io.observe(v); });
-  } else { playVisible(); }
-  document.addEventListener('WeixinJSBridgeReady', playVisible, false);
-  if (window.WeixinJSBridge) playVisible();
-  function once() { playVisible(); document.removeEventListener('touchstart', once); document.removeEventListener('click', once); }
-  document.addEventListener('touchstart', once, { passive: true });
-  document.addEventListener('click', once);
+  } else { vids.forEach(play); }
+
+  function unlockAll() {
+    viaBridge(function () {
+      vids.forEach(function (v) {
+        rawPlay(v).then(function () { if (!onScreen(v)) v.pause(); }).catch(function () {});
+      });
+    });
+  }
+  if (window.WeixinJSBridge) unlockAll();
+  else document.addEventListener('WeixinJSBridgeReady', unlockAll, false);
+
+  function retryVisible() { vids.forEach(function (v) { if (onScreen(v) && v.paused) rawPlay(v).catch(function () {}); }); }
+  document.addEventListener('touchstart', retryVisible, { passive: true });
+  document.addEventListener('click', retryVisible);
 })();
 </script>
